@@ -98,7 +98,7 @@ background: rgba(12,12,13,0.78);
 
 .display {
     opacity: 0;
-    
+
 
 }
 .hamburger {
@@ -200,9 +200,71 @@ background: rgba(12,12,13,0.78);
     
 }
 
-
-
-
 /* SLIDESHOW STYLING ENDS */
+
+/* ABOUT US SECTION STYLING BEGINS */
+.about_container {
+    /* border:2px solid black; */
+    width: 100%;
+    height: 300%;
+    position: absolute;;
+    top: 100%;
+
+}
+
+
+.about_title {
+    /* border: 2px yellowgreen solid; */
+    text-align: center;
+    margin:12% auto;
+    font-family: "Cabin";
+    font-weight: 600;
+    font-size: 30px;
+}
+/* .about_title h1 {
+    
+    
+} */
+
+.about_subtext {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin:auto;
+    font-family: "Cabin";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    color: #777777;
+    text-align: center;
+}
+
+.about_text_title h1 {
+    font-size: 36px;
+    font-family: "Great Vibes", serif;
+    color: #c0a756;
+    font-weight: normal;
+
+}
+
+.text {
+    font-family: "Cabin", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777777;
+    margin-bottom: 40px;
+    line-height: 32px;
+    width: 68%;
+    margin: 0 auto;
+    /* border: 2px black dashed; */
+    text-align: center;
+}
+
+.text strong {
+
+    color: #c0a756;
+
+}
+
+/* ABOUT US SECTION STYLING ENDS */
 
 
