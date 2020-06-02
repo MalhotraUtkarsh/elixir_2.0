@@ -1,0 +1,208 @@
+
+ /*RESETTING CSS BEGINS  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* background: black; */
+   
+}
+
+/* RESETTING CSS ENDS */
+
+/* HEADER STYLING BEGINS */
+
+.header_container {
+    /* border: 2px solid black; */
+    max-width: 100%;
+    /* background: black; */
+}
+
+.nav {
+
+    /* border: 2px yellow solid; */
+    max-width: 80%;
+    margin: auto;
+    /* background-color:rgb(145, 143, 143); */
+    /* opacity: 0.7; */
+    
+    /* text-align: center; */
+}
+
+/* STYLING OF BRAND => ELIXIR */
+.nav_heading  {
+  
+/* border:  2px solid black; */
+background: rgba(12,12,13,0.78);
+
+}
+/* .header {
+    background: rgba(12,12,13,0.78);
+} */
+
+.nav_heading h1 {
+    padding-top: 2%;
+    padding-left: 5%;
+    font-family: 'Pinyon Script', cursive;
+	font-size: 45px;
+    color: #C0A757;
+}
+
+
+/* 
+ .bg {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    /* background: black; */
+    /* position: fixed;
+    top: 0px;
+    opacity: 0.6;
+    z-index: -1;
+  }
+   */
+    
+    
+
+
+/* .nav_heading {
+    border: 2px black solid;
+    background-color: black;
+    opacity: 0.4;
+} */
+
+
+.nav_items {
+
+    font-size: 14px;
+    /* color: white; */
+    max-width: 100%;
+    border: 1px solid grey;
+    /* margin: auto; */
+    list-style: none;
+    padding: 5% 3%;
+    /* margin-top: 1%; */
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    background: rgba(12,12,13,0.78);
+    /* display: none; */
+
+}
+
+.display {
+    opacity: 0;
+    
+
+}
+.hamburger {
+    /* border: orangered 2px solid; */
+    /* float: right;  */
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+    font-size: 1.8rem;
+    color: white;
+
+}
+
+
+/* HEADER STYLING ENDS */
+
+/* SLIDESHOW STYLING BEGINS */
+.slideshow_container{
+    /* border: 2px black solid; */
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: black;
+}
+
+.home_slideshow img , .slides , .home_slideshow {
+
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.caption  {
+    /* border:2px yellow solid ;  */
+    width: 100%;
+    position: absolute;
+    top:60%;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300; 
+}
+
+
+
+.overlay {
+
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 40%;
+    background: url('Images/design.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    background-position: center;
+    transform: rotate(-10deg);
+    position: relative;
+    top: 15%;
+
+}
+
+
+
+.line {
+
+    width: 60%;
+    height: 40%;
+    background: url('Images/line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-position: center;
+    /* transform: rotate(-10deg); */
+    position: relative;
+    top: 12%;
+    left: 2%;
+    /* border:2px solid yellow; */
+
+   
+}
+
+.header_last_text {
+
+    font-weight: 100;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    color: white;
+
+    
+}
+
+
+
+
+/* SLIDESHOW STYLING ENDS */
+
+

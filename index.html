@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE OF WEBSITE -->
+    <title> Elixir - A resturant Website </title>
+    <!-- LINK OF CSS FILE-->
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!-- FONTS FOR WEBSITE -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Great+Vibes&family=Libre+Baskerville:ital@1&family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+    
+    <!-- WEBSITE ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- ........ HEADER SECTION BEGINS ........ -->
+
+    <header class="header" id="header">
+        <div class="header_container">
+
+            <!-- BACKGROUND-EFFECT OF HEADER  -->
+            <div class="bg"></div>
+           
+            <!-- NAME OF RESTAURANT => #BRAND -->
+            
+                <div class="nav_heading">
+                    <h1>Elixir</h1>
+                </div>
+
+            <!-- HAMBURGER MENU -->
+            <div class="hamburger">
+                <a class="icon">
+                    <i class="fa fa-bars" onclick="toggle()"></i>
+                </a>
+            </div>
+
+            <!-- HEADING FINSIHED -->
+            <!-- NAV BAR BEGIN  -->
+            <nav class="nav display" id="nav" >
+                <ul class="navbar">
+                    <li class="nav_items" id="home">home</li>
+                    <li class="nav_items" id="about">about</li>
+                    <li class="nav_items" id="menu">menu</li>
+                    <li class="nav_items" id="reservations">reservations</li>
+                    <li class="nav_items" id="gallery">gallery</li>
+                    <li class="nav_items" id="location">location</li>
+                </ul>
+            </nav>
+            <!-- NAV BAR ENDS -->
+        </div>
+    </header>
+    <!-- .......HEADER SECTION ENDS......... -->
+
+    <!-- .......SLIDESHOW SECTION BEGINS.......... -->
+    <section class="slideshow" id="slideshow">
+        <div class="slideshow_container">
+            <!-- SLIDESHOW OF IMAGES START -->
+            <div class="home_slideshow">
+                <div class="slides">
+                     <img src="Css/Images/slide1.jpg" alt="Css/Images/slide1.jpg">
+                     <div class="caption">
+                         <p> WELCOME TO ELIXIR </p>
+                     </div> 
+                </div>
+                <div class="slides">
+                    <img src="Css/Images/slide2.jpg" alt="Css/Images/slide2.jpg">
+                    <div class="caption">
+                        <p> TRY ELIXIR EXCLUSIVE </p>
+                    </div> 
+                </div>
+               <div class="slides">
+                   <img src="Css/Images/slide3.jpg" alt="Css/Images/slide3.jpg">
+                    <div class="caption">
+                       <p> BEST MEAL IN TOWN </p>
+                    </div> 
+                </div>
+                <!-- OVERLAY LOGO OF RESTAURANT -->
+                <div class="overlay"></div>
+                
+                <!-- LINE SEPERATOR AND SUBTEXT -->
+                <div class="line"></div>
+                <div class="header_last_text">
+                    <p>The Chef Creates the divine combinations </p>
+                </div>
+            </div>
+            <!-- SLIDESHOW OF IMAGES END -->
+        </div>
+    </section>
+    <!-- ........SLIDESHOW SECTION ENDS............ -->
+</body>
+     <script src="Javascript/script.js"></script>
+</html>
