@@ -251,7 +251,7 @@ background: rgba(12,12,13,0.78);
     font-size: 17px;
     font-weight: 400;
     color: #777777;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     line-height: 32px;
     width: 68%;
     margin: 0 auto;
@@ -265,6 +265,12 @@ background: rgba(12,12,13,0.78);
 
 }
 
+.text_2 {
+    position: relative;
+    top: 4%;
+
+}
+
 .about_slideshow_01 {
     /* border: 2px solid red; */
     position: relative;
@@ -274,6 +280,8 @@ background: rgba(12,12,13,0.78);
     width: 100%;
     max-width: 500px;
     /* max-height: 800px; */
+    max-height: 300px;
+
 }
 
 .about_slideshow_01 img{
@@ -292,10 +300,6 @@ background: rgba(12,12,13,0.78);
 
 }
 
-.text_2 {
-    position: relative;
-    top: 5%;
-}
 
 .about_slideshow_02 {
     /* border: 2px rgb(255, 251, 0) solid; */
@@ -305,7 +309,7 @@ background: rgba(12,12,13,0.78);
     width: 80%;
     margin: auto;
     max-width: 500px;
-    max-height: 500px;
+    max-height: 200px;
     /* display: block; */
 }
 
@@ -322,6 +326,9 @@ background: rgba(12,12,13,0.78);
 
 }
 
+.about_text {
+    position: relative;
+}
 
 /* ABOUT US SECTION STYLING ENDS */
 
