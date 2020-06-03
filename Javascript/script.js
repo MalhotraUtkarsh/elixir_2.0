@@ -33,6 +33,33 @@ setTimeout(carousel, 3000)
 }
 
 
+var about_index = 1 ;
+about_slideshow()
+
+function about_slideshow(){ 
+var i = 0 ;
+var x = document.getElementsByClassName('about_slides') ;
+var y = document.getElementsByClassName('about_slides_2') ;
+
+
+for (var i = 0; x.length > i; i++) {
+   x[i].style.opacity = "0" ;
+   y[i].style.opacity = "0" ;
+ 
+}
+about_index++;
+
+if (about_index> x.length) {about_index = 1}   
+x[about_index-1].style.opacity = "1";
+x[about_index-1].style.transition = " all 1s";
+y[about_index-1].style.opacity = "1";
+y[about_index-1].style.transition = " all 1s";
+ 
+
+setTimeout(about_slideshow, 3000)
+
+}
+
 
 
 
