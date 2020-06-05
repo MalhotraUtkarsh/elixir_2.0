@@ -35,7 +35,7 @@ body {
 .nav {
 
     /* border: 2px yellow solid; */
-    max-width: 80%;
+    max-width: 84%;
     margin: auto;
     display: block;
     /* background-color:rgb(145, 143, 143); */
@@ -96,7 +96,8 @@ background: rgba(12,12,13,0.78);
     border: 1px solid grey;
     /* margin: auto; */
     list-style: none;
-    padding: 5% 3%;
+    padding: 12px 2%;
+    
     /* margin-top: 1%; */
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
