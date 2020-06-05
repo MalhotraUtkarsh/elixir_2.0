@@ -358,7 +358,7 @@ background: rgba(12,12,13,0.78);
 
 
 .about_slideshow_02 {
-    border: 2px rgb(255, 251, 0) solid;
+    /* border: 2px rgb(255, 251, 0) solid; */
     position: relative;
     top:2%; 
     height: 250px;
