@@ -24,6 +24,7 @@ body {
     max-width: 100%;
     width: 100%;
     position: fixed;
+    z-index: 10000;
     
     /* background: black; */
 }
@@ -102,7 +103,9 @@ background: rgba(12,12,13,0.78);
     font-weight: bold;
     color: white;
     background: rgba(12,12,13,0.78);
-    z-index: 122;
+    position: relative;
+    z-index: 1000;
+   
     /* display: none; */
 
 }
@@ -121,6 +124,8 @@ background: rgba(12,12,13,0.78);
     padding-right: 10%;
     font-size: 1.8rem;
     color: white;
+   
+    cursor: pointer;
 
 }
 
