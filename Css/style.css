@@ -8,6 +8,13 @@
     /* border: 2px black solid; */
 }
 
+html { 
+
+    scroll-behavior: smooth;
+
+
+}
+
 body {
     overflow-x: hidden;
     /* background: black; */
@@ -105,16 +112,27 @@ background: rgba(12,12,13,0.78);
     color: white;
     background: rgba(12,12,13,0.78);
     position: relative;
+    text-decoration: none;
     z-index: 1000;
    
     /* display: none; */
 
 }
 
+.nav_items:hover {
+
+    color:  #C0A757;
+}
+
+nav ul li a  { 
+    text-decoration: none;
+}
+
 .display {
    display: none;
 
 }
+
 .hamburger {
     /* border: orangered 2px solid; */
     /* float: right;  */
