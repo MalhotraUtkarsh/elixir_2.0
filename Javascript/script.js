@@ -1,3 +1,6 @@
+//tester()
+
+
 function toggle() {
     var element = document.getElementById('nav') ;
     element.classList.toggle('display') ;
@@ -59,6 +62,19 @@ y[about_index-1].style.transition = " all 1s";
 setTimeout(about_slideshow, 3000)
 
 }
+
+
+
+
+function tester()  {
+ var x = document.getElementById("").parentElement.nodeName;
+console.log(x)
+
+
+}
+
+
+
 
 
 
