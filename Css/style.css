@@ -388,147 +388,116 @@ background: rgba(12,12,13,0.78);
 }
 
 /* BACKGROUND OF TIMETABLE */
-/* .text_2::after {
+#timetable {
     
-        content: "";
+        
         font-size: 35px;
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: block;
-        position: absolute;
+        background-color: black;
+        /* position: absolute;
         top: 109%;
-        left: -25%;
+        left: -25%; */
         width: 100vw;
-        background-image: url(Images/timetable1.jpg);
-        height: 130vh;
-        border: 2px red solid;
-        background-repeat: no-repeat;
+        height: 465px;
+        /* background-image: url(Images/timetable1.jpg); */
+        /* min-height: 125%; */
+        /* border: 2px red solid;  */
+        /* background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        background-position: center;  */
+        /* opacity: 0.6; */
     
-} */
-
-/* ABOUT US SECTION STYLING ENDS */
-
-/* TIMETABLE STYLING BEGIN */
-
-/* .timetable {
-    border:2px solid yellow;
-    width: 100%;
-    height: 300%;
-    position: absolute;
-    top: 500%;
-    bottom: 0px;
-    background-color: brown;
-   overflow-x: hidden;
-   background-image: url('Images/timetable1.jpg');
-} */
+}
 
 
-/* .timetable_container { 
+.timetable_heading {
 
-    border: 2px solid black;
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: 280vw; 
-} */
 
-/* .background { 
-
-    border: 2px solid red;
-    position: absolute;
-    top: 200%;
-
-    height: 99%;
-   
-} */
-
-/* .timetable_container {
-    position: absolute;
-    top: 110%;
-    left: -10%;
-    border: 2px yellow dashed;
-    text-align: center;
-    width: 115%;
-    height: 100vh;
-    z-index: 2;
-    color: white;
-    font-size: 24px;
+    color: #ffffff;
     font-family: "Oswald", sans-serif;
+    font-size: 25px;
     font-weight: 700;
-
-}
-
-.timetable_subtext {
-
-    position: absolute;
-    top: 12%;
-    border: 2px yellow dashed;
-    width: 99%;
     text-align: center;
-    font-weight: 800;
-    z-index: 2;
-    /* color #c0a756;
-    font-size: 18px; */
+    /* border: 2px yellow solid ; */
+    padding-top: 5%;
+    position: relative;
+    z-index: 1200;
 
 }
 
-.timetable_subtext p {
 
+.timetable_subtext { 
     color: #B29859;
     font-family: "Yellowtail", serif;
-    font-size: 22px;
-} */
-
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    z-index: 1200;
+}
 
 .timetable_info {
-    /* border: 2px red solid; */
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: absolute;
-    top: 21%;
-    width: 100%;
-    /* margin: auto; */
+
+    /* border: 2px black solid; */
+    max-height: 100%;
+    position: relative;
+    z-index: 1200;
+
 }
 
-/* 
-.first {
-    margin-top: 5%;
-} */
-
-.second {
-    margin-top: 10%;
-}
-
-.call {
-    margin-top: 8%;
-    font-size: 15px;
-    font-weight: 100;
-}
 
 .day {
     color: #B29859;
     font-family: "Yellowtail", serif;
-    font-size: 35px;
-    font-weight: 100;
+    font-size: 28px;
+    text-align: center;
+   
 
+}
+.time  {
+
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+.call  {
+    
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.bgimage {
+
+    /* border: 2px solid yellowgreen; */
+    height: 466px;
+    position: absolute;
+    width: 100%;
+    background-image: url(Images/timetable1.jpg);
+    /* border: 2px red solid;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: 0.6;
     
 }
+/* ABOUT US SECTION STYLING ENDS */
 
-.time {
-
-    font-size: 40px;
-    margin-top: 4%;
-    font-weight: bold;
-
-
-}
-
-
-
-
+/* TIMETABLE STYLING BEGIN */
 
 /* TIMETABLE STYLING ENDS */
 
