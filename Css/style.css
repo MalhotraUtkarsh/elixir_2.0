@@ -11,16 +11,18 @@
 html { 
 
     scroll-behavior: smooth;
+    height: 100%;
 
 
 }
 
 body {
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
     /* background: black; */
        
 }
-
 
 /* ................. CSS CUSTOMIZIED................ */
 
@@ -86,7 +88,6 @@ body {
     color: #C0A757;
 }
 /* STYLING OF NAV ITEMS => HOME  , ABOUT ETC ....*/
-
 .nav_items {
 
     font-size: 14px;
@@ -102,7 +103,7 @@ body {
     position: relative;
     text-decoration: none;
     z-index: 1000;
-   
+
     /* display: none; */
     /* color: white; */
     /* margin: auto; */
@@ -294,12 +295,8 @@ nav ul li a  {
 .about  {
     
     width: 100%;
-    height: 300%;
     position: relative;
-    top: 100%;
-
     /* border:2px solid yellow; */
-
 }
 
 .about_container { 
@@ -606,13 +603,9 @@ nav ul li a  {
 
 /* MENU SECTION LAYOUT BEGINS */
 #menu {
-
-    position:absolute;
-    /* height: 100%; */
+    
     width: 100%;
-
      /* border: 2px olivedrab solid ; */
-
 }
 
 /*>.........STYLING OF ENTIRE MENU LAYOUT BEGINS...............<*/
@@ -745,13 +738,468 @@ nav ul li a  {
     color: white;
     background:#bfa760;
     border: 1px solid #bfa760;
-    transition: all 2s ;
+    margin-top: 2%;
+    transition: all 1s ;
 }
  
-/* STYLING OF MEAL BUTTONS  ENDS */
+/* STYLING OF MEAL BUTTONS  BEGIN */
 
 
 /* STYLING OF HEADING OF  MENU ENDS*/
 
 
 /*>........... MENU SECTION ENDS...............< */
+
+
+/*>...........GALLERY SECTION BEGINS...............< */
+/* GALLERY LAYOUT DESIGN */
+ #gallery {
+
+    width: 100%;
+    text-align: center;
+    background: #141313;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+/* GALLERY LAYOUT DESIGN  ENDS */
+
+/* GALLERY HEADING DESIGN BEGIN  */
+
+.gallery_heading {
+
+    font-family: "Cabin";
+    font-weight: 600;
+    font-size: 28px;
+    color: white ;
+    text-transform: uppercase;
+    margin-top: 2%;
+
+}
+
+/* GALLERY HEADING DESIGN ENDS  */
+
+/* GALLERY NAV DESIGN BEGINS */
+.nav_gallery {
+
+    /* border: 2px yellow solid; */
+    margin-top: 2%;
+}
+
+.gallery_nav_items a {
+
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 5px;
+    
+}
+
+.gallery_nav_items a:hover {
+    border-bottom-color: #bfa760;
+
+}  
+
+/* GALLERY NAV DESIGN ENDS */
+
+/* GALLERY IMAGES STYLING BEGINS */
+.gallery_images { 
+
+margin-top: 4%;
+
+}
+
+.gallery_images img 
+{ 
+    width: 100%;
+    margin: -3px;
+    height: auto;
+    /* padding-bottom: 20px; */
+    /* border: 2px yellow solid; */
+}
+
+
+/* GALLERY IMAGES STYLING ENDS */
+
+/*>...........GALLERY SECTION ENDS ...............< */
+
+/* >.............RESERVATION SECTION BEGINS..............< */
+#reservations { 
+
+    width: 100%;
+    /* border: 2px solid teal; */
+    /* height: 120%; */
+    margin-top: 8%;
+}
+
+.reservation_heading h2 {
+
+    text-align: center;
+    font-family: "Cabin";
+    font-weight: 600;
+    font-size: 24px;
+    color: #383733;
+    text-transform: uppercase;
+    /* border: 2px solid yellow; */
+    /* margin-top: 15%; */
+
+}
+
+.reservation_subtext {
+
+    font-family: "Cabin";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17px;
+    color: #777777;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+
+}
+
+.reservation_logo  {
+
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.reservation_logo img   {
+
+    
+    width: 25%;
+}
+
+.reservation_info {
+
+    /* border: red 2px solid; */
+    margin-top: 5%;
+}
+
+.reservation_info_1 { 
+
+    font-family: "Yellowtail";
+    font-size: 25px;
+    color: #141313;
+    text-align: center;
+    font-weight: 500;
+}
+
+.reservation_info_1::before {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    /* border-top: 1px solid #B4A767 ; */
+    border-bottom: 1px solid #B4A767;
+    width: 25%;
+    left: 2%;
+    font-weight: bold;
+
+
+}
+
+
+.reservation_info_1::after {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    /* border-top: 1px solid #B4A767 ; */
+    border-bottom: 1px solid #B4A767;
+    width: 24%;
+    right: 2%;
+    font-weight: bold;
+
+
+}
+.reservation_info_2 {
+    
+    color: #444342;
+    text-align: center;
+    font-family: "Oswald",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.reservation_form {margin-top: 5%;}
+
+.table input {
+
+    width: 90%;
+    height: 32px;
+    margin: 2%;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 7px;
+    border: 1px solid #cbc8c8;
+    
+}
+
+.book_table_form h2 {
+
+    text-align: left;
+    color: #101010;
+    font-size: 1.4em;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    padding: 7px;
+
+}
+
+.reservation_button {
+
+    margin-top: 8%;
+}
+/* >.............RESERVATION SECTION ENDS..............< */
+
+/* TESTIMONIALS STYLING BEGINS */
+#testimonials {
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    /* height: 100%; */
+
+}
+
+.testimonials_container {
+
+    background-color: black;
+    height: 400px;
+    /* border: 2px solid yellow; */
+}
+
+
+
+.testimonial_bgImage  {
+
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    background-image: url('Images\\testimonials.jpg');
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+
+.testimonials_heading {
+    position:relative;
+    z-index: 1000;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: #bfa760;
+    text-transform: uppercase;
+    top: 25%;
+    left: 2%;
+}
+
+.testimonials_heading::after {
+
+    content:'';
+    width: 40px;
+    color: white;
+    position:absolute;
+    height:3px;
+    left: 5px;
+    z-index: 10000;
+    background: #e2e9ed;
+
+}
+ /* 
+ 
+ */
+
+ .testimonials_content {
+
+    position:relative;
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    color: #e2e9ed;
+    font-size: 15px;
+    line-height: 1.8em;
+    z-index: 10000;
+    /* border: 2px solid tomato; */
+    height: 70%;
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+
+   
+
+
+ }
+
+ .testimonials_content p  {
+
+    position:absolute;
+    top: 50%;
+    
+ }
+
+ .testimonials_content span  {
+
+    color:#B4A767;
+    font-weight: bold;
+ }
+
+
+
+/* TESTIMONIALS STYLING ENDS */
+
+/* CONTACT STYLING BEGIN */
+#contact {
+
+    width: 100%;
+    text-align: center;
+    background: #141313;
+    font-size: 20px;
+    /* margin-top: 2%; */
+    color: white;
+    /* border: tomato 2px solid; */
+}
+
+
+.contactform {
+
+    display:inline-block;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    background: #2C2A2A;
+    border: none;
+    height: 50px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #4b4747;
+    padding: 3% 4%;
+
+
+}
+/* resize: none; */
+
+.lowerform textarea {
+
+    resize: none;
+    height: 30%;
+
+}
+
+.contact_heading {
+
+    text-align: center;
+    font-family: "Cabin";
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 4%;
+
+}
+
+/* .contact_heading::before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    border-top: 1px solid #B4A767 ;
+    border-bottom: 1px solid #B4A767;
+    width: 20%;
+    left: 5%;
+    font-weight: bold;
+}
+
+
+.contact_heading::after {
+
+
+    content: "";
+    position: absolute;
+    height: 8px;
+    border-top: 1px solid #B4A767 ;
+    border-bottom: 1px solid #B4A767;
+    width: 20%;
+    right: 5px;
+    top: 2px;
+    /* top: 30px; */
+    /* font-weight: bold; 
+    
+    }
+    */
+
+
+ 
+
+/*  */
+
+/* 
+
+text-align: center;
+    font-family: "Cabin";
+    font-weight: 600;
+    font-size: 28px;
+    color: #383733;
+    text-transform: uppercase;
+
+*/
+/* CONTACT STYLING ENDS */
+
+
+/* Footer Begins */
+#map {
+    width: 100%;
+}
+
+.footer {
+	width: 100%;
+	background-color:#2C2A2A;
+	
+}
+
+.social_menu { 
+
+    text-align: center;
+    margin-top: 2%; 
+    font-size: 30px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+
+.social_menu i {
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	padding-top: 2% ;
+	background-color: #3D3C38;
+	color: white;
+    cursor: pointer;
+
+}
+
+.social_menu i:hover {
+
+	background-color:#bfa760;
+	transition: all 1s ;
+}
+
+.social-menu {
+	background-color: black ;
+}
+    
+    /* Footer Ends*/
