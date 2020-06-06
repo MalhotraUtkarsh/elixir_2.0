@@ -65,11 +65,53 @@ setTimeout(about_slideshow, 3000)
 
 
 
-
+tester()
 function tester()  {
- var x = document.getElementById("").parentElement.nodeName;
-console.log(x)
+ var x = document.getElementById("menu").parentElement.nodeName;
+ console.log(x)
 
+
+}
+
+/* 
+maxwidth = screen.width
+maxheight = screen.height
+console.log(maxwidth)
+console.log(maxheight)
+
+*/
+
+   navChange()
+   
+
+
+
+// NAV COLOR CHANGE FUNCTION 
+
+function navChange() {
+
+   $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      console.log(scroll)
+      
+      if (scroll > 300) {
+
+         $(".header_container").addClass("navChange");
+         
+         $(".hamburger").css("color", "black")
+         
+      } 
+      else {
+
+         $(".header_container").removeClass("navChange");
+
+         $(".hamburger").css("color", "white")
+
+         
+      }
+
+
+   })
 
 }
 
