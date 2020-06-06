@@ -48,8 +48,8 @@
                     <li class="nav_items" id="navhome" ><a href="#slideshow">home</a></li>
                     <li class="nav_items" id="navabout"><a href="#about_us">about </a></li>
                     <li class="nav_items" id="navmenu"><a href="#menu">menu </a></li>
-                    <li class="nav_items" id="navreservations"><a href="#reservations">reservations </a></li>
                     <li class="nav_items" id="navgallery"><a href="#gallery">gallery </a></li>
+                    <li class="nav_items" id="navreservations"><a href="#reservations">reservations </a></li>
                     <li class="nav_items" id="navlocation"><a href="#location">location </a></li>
                 </ul>
             </nav>
@@ -403,7 +403,165 @@
         </div> 
     </section>
 
-    
+    <section class="gallery" id="gallery">
+        <div class="gallery_container">
+            <div class="gallery_heading">
+                <h1>gallery</h1>
+            </div>
+            <div class="gallery_nav">
+                <!-- NAV BAR BEGIN  -->
+            <nav class="nav_gallery">
+                <ul class="image_menu">
+                    <li class="gallery_nav_items"><a onclick="image()">All Photos</a></li>
+                    <li class="gallery_nav_items"><a onclick="restaurant()">Restaurants</a></li>
+                    <li class="gallery_nav_items"><a onclick="drinks()">Drinks</a></li>
+                    <li class="gallery_nav_items"><a onclick="deserts()">Deserts</a></li>
+                </ul>
+            </nav>
+            <!-- NAV BAR ENDS -->
+            </div>
+            <div class="gallery_images">
+                <img src="Css/Images/gallery01.jpg" alt="GALLERY01" class="food" id="img1">
+                <img src="Css/Images/gallery02.jpg" alt="GALLERY02" class="food" id="img2">
+                <img src="Css/Images/gallery03.jpg" alt="GALLERY03" class="food" id="img3">
+                <img src="Css/Images/gallery04.jpg" alt="GALLERY04" class="deserts" id="img4">
+                <img src="Css/Images/gallery05.jpg" alt="GALLERY05" class="deserts" id="img5">
+                <img src="Css/Images/gallery06.jpg" alt="GALLERY06" class="deserts" id="img6">
+                <img src="Css/Images/gallery07.jpg" alt="GALLERY07" class="drinks" id="img7">
+                <img src="Css/Images/gallery08.jpg" alt="GALLERY07" class="drinks" id="img8">
+                <img src="Css/Images/gallery09.jpg" alt="GALLERY09" class="drinks" id="img9">
+            </div>
+        </div>
+    </section>
+
+    <section class="reservations" id="reservations">
+        <div class="reservation_container">
+            <div class="reservation_heading">
+                <h2> Reservation </h2>
+            </div>
+
+            <div class="reservation_subtext">
+                <p> 
+                    Booking a table has never been so easy with free &amp; instant online restaurant reservations,
+                     booking now!!
+                </p>
+            </div>
+
+            <div class="reservation_logo">
+                <img src="Css/Images/reservation_logo.png" alt="LOGO">
+            </div>
+
+            <div class="reservation_info">
+                <h2 class="reservation_info_1"> Welcome To Elixir </h2>
+                <h1 class="reservation_info_2">MAKE A RESERVATION </h1>
+                <h2 class="reservation_info_1"> Open To All </h2>
+            </div>
+
+            <div class="reservation_form">
+                
+            <div class="book_table_form">
+                <h2> Book A Table </h2>
+
+                <form class="table">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="number" name="number" id="number" placeholder="Number">
+                </form>
+
+            </div>
+
+            <div class="book_table_form">
+
+                <h2> Contact Details </h2>
+                <form class="table">
+                    <input type="text" name="date" id="date" placeholder="Date">
+                    <input type="email" name="time" id="time" placeholder="Time">
+                    <input type="number" name="party" id="party" placeholder="Party">
+                </form>
+            </div>
+
+            <div class="menubutton reservation_button">
+                <input type="button" value="Reserve Your Table">
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials_container">
+            <div class="testimonial_bgImage"></div>
+             <div class="testimonials_heading">
+                 <h1>testimonials</h1>
+             </div>
+             <div class="testimonials_content">
+                 <p id="content1" class="content">
+                    Applicake chocolate cake wafer toffee pie soufflé wafer.
+                    Tart marshmallow wafer macaroon cheesecake jelly.
+                    Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
+                    <br>
+                    <span> STEVE JOBS </span>
+                </p>
+
+                <p id="content2" class="content">
+                    Applicake chocolate cake wafer toffee pie soufflé wafer.
+                    Tart marshmallow wafer macaroon cheesecake jelly.
+                    Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
+                    <br>
+                    <span> BILL GATES </span>
+                </p>
+
+                <p id="content3" class="content">
+                    Applicake chocolate cake wafer toffee pie soufflé wafer.
+                    Tart marshmallow wafer macaroon cheesecake jelly.
+                    Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
+                    <br>
+                    <span> ELON MUSK </span>
+                </p>
+
+
+             </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact_container">
+            <div class="contact_heading">
+                <h3>CONTACT</h3>    
+            </div>
+            <div class="contact_form">
+                <div class="upperform">
+                    <form>
+                        <input type="text" name="Name" id="contactName" placeholder="Name" class="contactform">
+                        <input type="text" name="email" id="contactemail" placeholder="Message" class="contactform">
+                        <input type="text" name="number" id="contactnumber"placeholder="Number" class="contactform" >
+
+                    </form>
+                </div>
+
+                <div class="lowerform">
+                    <textarea name="description" id="contactdescription" cols="30" rows="7" placeholder="Message" class="contactform"></textarea>
+                </div>
+
+                <div class=" menubutton reservation_button">
+                    <input type="button" value="Submit">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0" id="location"></iframe>
+    </section>
+
+    <footer class="footer">
+		<div class="social_menu">
+			<i class="fa fa-twitter" class="social_icon"></i>
+			<i class="fa fa-facebook" class="social_icon"></i>
+			<i class="fa fa-pinterest" class="social_icon"></i>
+			<i class="fa fa-google-plus" class="social_icon"></i>
+		</div>
+	</footer>
 </body>
      <script src="Javascript/script.js"></script>
 </html>
