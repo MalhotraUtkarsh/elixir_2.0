@@ -43,12 +43,15 @@ function about_slideshow(){
 var i = 0 ;
 var x = document.getElementsByClassName('about_slides') ;
 var y = document.getElementsByClassName('about_slides_2') ;
+var z = document.getElementsByClassName('content')
 
 
 for (var i = 0; x.length > i; i++) {
    x[i].style.opacity = "0" ;
    y[i].style.opacity = "0" ;
- 
+   z[i].style.opacity = "0" ;
+   z[i].style.transform = "scale(0)" ;
+
 }
 about_index++;
 
@@ -57,6 +60,9 @@ x[about_index-1].style.opacity = "1";
 x[about_index-1].style.transition = " all 1s";
 y[about_index-1].style.opacity = "1";
 y[about_index-1].style.transition = " all 1s";
+z[about_index-1].style.opacity = "1";
+z[about_index-1].style.transform = "scale(1)" ;
+z[about_index-1].style.transition = " all 2s";
  
 
 setTimeout(about_slideshow, 3000)
@@ -65,7 +71,7 @@ setTimeout(about_slideshow, 3000)
 
 
 
-tester()
+//tester()
 function tester()  {
  var x = document.getElementById("menu").parentElement.nodeName;
  console.log(x)
@@ -92,7 +98,7 @@ function navChange() {
 
    $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      console.log(scroll)
+      //console.log(scroll)
       
       if (scroll > 300) {
 
@@ -116,6 +122,125 @@ function navChange() {
 }
 
 
+// GALLERY FUNCTIONS BEGINS 
+
+  // ALL IMAGES FUNCTION 
+
+  function image() {
+
+   let image = ["img1","img2","img3","img4","img5" ,"img6","img7","img8","img9"]
+   //console.log(image) 
+
+   for (let x = 0; x < image.length; x++) {
+      var element = document.getElementById(image[x]) ;
+      element.style.display = "block" 
+      element.style.opacity = "1"
+      element.style.transition = "all 2.0s"
+      setTimeout(function(){document.getElementById(image[x]).style.transform = "scale(1)"});
+      
+      
+   }
+  }
+  // RESTURANT FUNCTION 
+
+  function restaurant() {
+
+   let food = ["img1","img4","img6","img8","img9"] 
+   let others = ["img2","img3","img5","img7"] 
+   console.log(food)
+   
+   for (let x = 0; x < food.length; x++) {
+
+      var element = document.getElementById(food[x]) ;
+      element.style.transform = "scale(0.6)"
+      element.style.opacity = "0"
+      element.style.transition = "all 1.2s"
+      setTimeout(function(){document.getElementById(food[x]).style.display = "none"},1000);
+      
+      
+   }
+
+   for (let x = 0; x < others.length; x++) {
+
+      var element = document.getElementById(others[x]) ;
+      element.style.display = "block" 
+      //element.style.transform = "scale(1)"
+      element.style.opacity = "1"
+      element.style.transition = "all 2.0s"
+      setTimeout(function(){document.getElementById(others[x]).style.transform = "scale(1)"});
+     
+     
+      
+   }
+     
+  }
+
+
+  function deserts() {
+
+   let food = ["img1","img4","img2","img5","img7"] 
+   let deserts = ["img3","img6","img8","img9"] 
+   console.log(food)
+   
+   for (let x = 0; x < food.length; x++) {
+
+      var element = document.getElementById(food[x]) ;
+      element.style.transform = "scale(0.6)"
+      element.style.opacity = "0"
+      element.style.transition = "all 1.2s"
+      setTimeout(function(){document.getElementById(food[x]).style.display = "none"},1000);
+      
+      //setTimeout(function(){element.style.display = "none" ; return 0 },1000); 
+      
+   }
+
+   for (let x = 0; x < deserts.length; x++) {
+
+      var element = document.getElementById(deserts[x]) ;
+      element.style.display = "block" 
+      element.style.opacity = "1"
+      element.style.transition = "all 2.0s"
+      setTimeout(function(){document.getElementById(deserts[x]).style.transform = "scale(1)"});
+      
+      
+   }
+     
+  }
+
+
+  function drinks() {
+
+   let food = ["img1","img4","img8","img7","img9"] 
+   let drinks = ["img3","img6","img2","img5"] 
+   
+   for (let x = 0; x < food.length; x++) {
+
+      var element = document.getElementById(food[x]) ;
+      element.style.transform = "scale(0.6)"
+      element.style.opacity = "0"
+      element.style.transition = "all 1.2s"
+      setTimeout(function(){document.getElementById(food[x]).style.display = "none"},1000);
+      
+      //setTimeout(function(){element.style.display = "none" ; return 0 },1000); 
+      
+   }
+
+   for (let x = 0; x < drinks.length; x++) {
+
+      var element = document.getElementById(drinks[x]) ;
+      element.style.display = "block"
+      element.style.transform = "scale(1)"
+      element.style.transition = "all 2.0s"
+      setTimeout(function(){document.getElementById(drinks[x]).style.transform = "scale(1)"});
+      
+      
+   }
+     
+  }
+
+  
+
+  
 
 
 
