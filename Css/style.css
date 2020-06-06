@@ -1,5 +1,5 @@
 
- /*RESETTING CSS BEGINS  */
+ /*.............CUSTOMIZING CSS ..................  */
 
 * {
     margin: 0px;
@@ -22,90 +22,78 @@ body {
 }
 
 
-/* RESETTING CSS ENDS */
+/* ................. CSS CUSTOMIZIED................ */
 
-/* HEADER STYLING BEGINS */
+/* website view in phone  => landscape and portrait*/
+
+/* =>>>>>>  USE COMMENTOUT BORDERS IN MY CODE TO  UNDERSTAND THE STYLING OF AN ELEMENT <<<<<<<<<=  HAppY CODING*/
+
+/* >.............HEADER STYLING BEGINS ............<*/
+
+/* LAYOUT OF HEADER */
 
 .header_container {
-    /* border: 2px solid black; */
+    
     max-width: 100%;
     width: 100%;
     position: fixed;
     z-index: 10000;
-    
-    /* background: black; */
+    background: rgba(12,12,13,0.78);
+    /* border: 2px solid black; */
+
 }
 
+/* EFFECTS OF COLOR CHANGE IN NAVBAR */
 
+.navChange {
 
+    background-color: white;
+    transition:  all 1s;
+    
+}
+
+.dark {
+
+    color: black;
+
+}
+
+/* STYLING OF NAVBAR BEGINS */
 
 .nav {
 
-    /* border: 2px yellow solid; */
-    max-width: 84%;
-    margin: auto;
-    display: block;
-    /* background-color:rgb(145, 143, 143); */
-    /* opacity: 0.7; */
     
-    /* text-align: center; */
+    display: block;
+    position:fixed;
+    left: 8%;
+    width: 84%;
+    /* border: 2px yellow solid; */
+    /* max-width: 84%; */
+   /* margin: auto; */
+   
 }
+
+
 
 /* STYLING OF BRAND => ELIXIR */
-.nav_heading  {
-  
-/* border:  2px solid black; */
-background: rgba(12,12,13,0.78);
-
-
-}
-/* .header {
-    background: rgba(12,12,13,0.78);
-} */
 
 .nav_heading h1 {
+
     padding-top: 2%;
     padding-left: 5%;
     font-family: 'Pinyon Script', cursive;
 	font-size: 45px;
     color: #C0A757;
 }
-
-
-/* 
- .bg {
-    display: inline-block;
-    width: 100%;
-    height: 70px;
-    /* background: black; */
-    /* position: fixed;
-    top: 0px;
-    opacity: 0.6;
-    z-index: -1;
-  }
-   */
-    
-    
-
-
-/* .nav_heading {
-    border: 2px black solid;
-    background-color: black;
-    opacity: 0.4;
-} */
-
+/* STYLING OF NAV ITEMS => HOME  , ABOUT ETC ....*/
 
 .nav_items {
 
     font-size: 14px;
-    /* color: white; */
     max-width: 100%;
     border: 1px solid grey;
-    /* margin: auto; */
     list-style: none;
     padding: 12px 2%;
-    
-    /* margin-top: 1%; */
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -116,16 +104,22 @@ background: rgba(12,12,13,0.78);
     z-index: 1000;
    
     /* display: none; */
+    /* color: white; */
+    /* margin: auto; */
+    /* margin-top: 1%; */
 
 }
 
-.nav_items:hover {
+/* SETTING HOVERING AND OTHER EFFECT ON NAVBAR */
+
+nav ul li a:hover {
 
     color:  #C0A757;
 }
 
 nav ul li a  { 
     text-decoration: none;
+    color: white ;
 }
 
 .display {
@@ -133,33 +127,41 @@ nav ul li a  {
 
 }
 
+/* STYLING OF HAMUBURGER ICON */
+
 .hamburger {
-    /* border: orangered 2px solid; */
-    /* float: right;  */
+
     position: fixed;
-    top: 2%;
+    top: 3%;
     width: 100%;
     text-align: right;
-    padding-right: 10%;
+    padding-right: 5%;
     font-size: 1.8rem;
     color: white;
-   
     cursor: pointer;
+
+    /* border: orangered 2px solid; */
+    /* float: right;  */
 
 }
 
 
-/* HEADER STYLING ENDS */
+/*>................HEADER STYLING ENDS ...........<*/
 
-/* SLIDESHOW STYLING BEGINS */
-#slideshow{
-    /* border: 2px black solid; */
+/* >.............. SLIDESHOW STYLING BEGINS ................< */
+
+/* LAYOUT OF SLIDESHOW SECTION */
+
+#slideshow {
+    
     position: relative;
      top: 0px; 
     height: 100vh;
     width: 100%;
     z-index: -1;
     background: black;
+
+    /* border: 2px black solid; */
 }
 
 .slideshow_container { 
@@ -169,15 +171,18 @@ nav ul li a  {
 
 }
 
+/* LAYOUT STYLING ENDS */
+
+/* SLIDESHOW STYLING BEGINS */
+
 .home_slideshow   {
 
     position: relative;
-    /* background-color: orchid; */
     height: 100%;
     width: 100%;
-    /* border: olive 2px solid; */
-    /* z-index: -1; */
     
+    /* border: olive 2px solid; */
+      
 }
 
 .slides   { 
@@ -195,13 +200,12 @@ nav ul li a  {
     top: 0%;
     z-index: 12;
 
-
 }
 
 
 
 .caption  {
-    /* border:2px yellow solid ;  */
+    
     width: 100%;
     position: absolute;
     top:60%;
@@ -213,13 +217,17 @@ nav ul li a  {
     font-weight: 300;
     z-index: 1200; 
 
+    /* border:2px yellow solid ;  */
+
 }
 
+/* SLIDESHOW STYLING ENDS */
 
+/* OVERLAY LOGO STYLNG BEGINS */
 
 .overlay {
 
-    /* border: 2px solid red; */
+    
     width: 60%;
     height: 40%;
     background: url('Images/design.png');
@@ -233,9 +241,13 @@ nav ul li a  {
     left: 20%;
     z-index: 1200;
 
+    /* border: 2px solid red; */
+
 }
 
+/* OVERLAY LOGO STYLNG ENDS */
 
+/* STYLING OF  LINE BEGINS */
 
 .line {
 
@@ -244,16 +256,17 @@ nav ul li a  {
     background: url('Images/line.png');
     background-repeat: no-repeat;
     background-size: contain;
-    /* margin: auto; */
-    background-position: center;
-    /* transform: rotate(-10deg); */
+    background-position: center; 
     position: absolute;
     bottom: 5%;
-    /* left: 22%; */
     z-index: 1300;
+
     /* max-width: 100%;
     border:2px solid yellow; */
+
 }
+
+/* STYLING OF  LINE ENDS */
 
 .header_last_text {
 
@@ -271,19 +284,26 @@ nav ul li a  {
     
 }
 
-/* SLIDESHOW STYLING ENDS */
+/* >..........SLIDESHOW STYLING ENDS ..............<*/
 
-/* ABOUT US SECTION STYLING BEGINS */
+
+/* >.................ABOUT US SECTION STYLING BEGINS <...........*/
+
+/* STYLING LAYOUT OF SECTION BEGIN  */
+
 .about  {
-    /* border:2px solid yellow; */
+    
     width: 100%;
     height: 300%;
     position: relative;
     top: 100%;
 
+    /* border:2px solid yellow; */
+
 }
 
 .about_container { 
+
     position: relative;
     top: 0%;
     height: 100%;
@@ -291,22 +311,28 @@ nav ul li a  {
 
 }
 
+/* STYLING LAYOUT OF SECTION ENDS  */
+
+
+/* SECTION HEADING  AND SUBHEADING STYLING BEGIN  */
+
 
 .about_title {
-    /* border: 2px yellowgreen solid; */
+   
     text-align: center;
     margin:12% auto;
     font-family: "Cabin";
     font-weight: 600;
     font-size: 30px;
+    
+    /* border:2px solid yellow; */
+
 }
-/* .about_title h1 {
-    
-    
-} */
+
+
 
 .about_subtext {
-    /* border: 1px solid red; */
+    
     width: 90%;
     margin:auto;
     font-family: "Cabin";
@@ -315,10 +341,18 @@ nav ul li a  {
     font-size: 17px;
     color: #777777;
     text-align: center;
+
+    /* border: 1px solid red; */
+
 }
 
+/* SECTION HEADING AND SUBHEADING STYLING ENDS  */
+
+
+/* ABOUT US TEXT CONTENT STYLING BEGIN => PARAGRAHS  */
 
 .about_text_title h1 {
+    
     font-size: 36px;
     font-family: "Great Vibes", serif;
     color: #c0a756;
@@ -327,16 +361,17 @@ nav ul li a  {
 }
 
 .text {
+    
     font-family: "Cabin", sans-serif;
     font-size: 17px;
     font-weight: 400;
     color: #777777;
-    /* margin-bottom: 40px; */
     line-height: 32px;
     width: 68%;
     margin: 0 auto;
-    /* border: 2px black dashed; */
     text-align: center;
+
+    /* border: 2px black dashed; */
 }
 
 .text strong {
@@ -351,38 +386,52 @@ nav ul li a  {
 
 }
 
+
+.about_text {
+    position: relative;
+    margin-top: 5%;
+}
+
+/* ABOUT US TEXT STYLING ENDS */
+
+
+
+/* ABOUT US SLIDESHOW STYLING BEGINS */
+
 .about_slideshow_01 {
-    /* border: 2px solid red; */
+    
     position: relative;
     top: 2%;
     margin:  auto;
     height: 300px;
     width: 100%;
     max-width: 500px;
-    /* max-height: 800px; */
     max-height: 300px;
+
+    /* border: 2px solid red; */
 
 }
 
 .about_slideshow_01 img{
     width: 80%;
-    /* border: 2px yellowgreen solid; */
     margin:  auto;
-    /* height: 100%; */
     height: auto;
     position: absolute;
     left: 15%;
     top: 0%;
     max-height: 100%;
+
     /* max-width: 500px;
     max-height: 500px; */
     /* display: block; */
+    /* border: 2px yellowgreen solid; */
+     /* height: 100%; */
 
 }
 
 
 .about_slideshow_02 {
-    /* border: 2px rgb(255, 251, 0) solid; */
+    
     position: relative;
     top:2%; 
     height: 250px;
@@ -392,6 +441,7 @@ nav ul li a  {
     max-height: 200px;
     /* box-shadow: 1px 1px 1px 1px rgb(0, 217, 255); */
     /* display: block; */
+    /* border: 2px rgb(255, 251, 0) solid; */
 }
 
 .about_slideshow_02 img {
@@ -406,15 +456,19 @@ nav ul li a  {
    
 }
 
-.about_text {
-    position: relative;
-    margin-top: 5%;
-}
+/* ABOUT US SLIDESHOW STYLING ENDS */
 
-/* BACKGROUND OF TIMETABLE */
+
+
+
+/*>........... ABOUT US SECTION STYLING ENDS ..............<*/
+
+/*>............. TIMETABLE STYLING BEGIN ..................<*/
+
+/* LAYOUT OF TIMETABLE  SECTON  BEGIN */
+
 #timetable {
-    
-        
+            
         font-size: 35px;
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -436,24 +490,55 @@ nav ul li a  {
     
 }
 
+/* LAYOUT OF STYLING ENDS */
+
+/* BACKGROUND IMAGE STYLING BEGINS */
+
+.bgimage {
+
+    /* border: 2px solid yellowgreen; */
+    height: 466px;
+    position: absolute;
+    width: 100%;
+    background-image: url(Images/timetable1.jpg);
+    /* border: 2px red solid;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    opacity: 0.6;
+    
+}
+
+/* BACKGROUND IMAGE STYLING ENDS */
+
+/* CONTENT STYLING OF TIMTABLE SECTION BEGINS */
+
+/* CONTENT HEADING BEGINS */
+
 
 .timetable_heading {
-
 
     color: #ffffff;
     font-family: "Oswald", sans-serif;
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-    /* border: 2px yellow solid ; */
     padding-top: 5%;
     position: relative;
     z-index: 1200;
 
+     /* border: 2px yellow solid ; */
+
 }
 
 
+/* CONTENT HEADING ENDS */
+
+/* CONTENT SUBTEXT BEGINS */
+
 .timetable_subtext { 
+    
     color: #B29859;
     font-family: "Yellowtail", serif;
     font-size: 24px;
@@ -461,25 +546,30 @@ nav ul li a  {
     font-weight: 400;
     position: relative;
     z-index: 1200;
+
 }
+
+/* CONTENT SUBTEXT ENDS */
+
+/* EXTRA CONTENT BEGINS */
 
 .timetable_info {
 
-    /* border: 2px black solid; */
     max-height: 100%;
     position: relative;
     z-index: 1200;
 
+    /* border: 2px black solid; */
 }
 
 
 .day {
+
     color: #B29859;
     font-family: "Yellowtail", serif;
     font-size: 28px;
     text-align: center;
    
-
 }
 .time  {
 
@@ -500,38 +590,139 @@ nav ul li a  {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 1%;
+
+}
+
+/* EXTRA CONTENT ENDS */
+
+/* CONTENT STYLING OF TIMTABLE SECTION ENDS */
+
+
+/* >...........TIMETABLE STYLING ENDS .........<*/
+
+/*>........... MENU SECTION BEIGNS..............< */
+
+
+/* MENU SECTION LAYOUT BEGINS */
+#menu {
+
+    position:absolute;
+    /* height: 100%; */
+    width: 100%;
+
+     /* border: 2px olivedrab solid ; */
+
+}
+
+/*>.........STYLING OF ENTIRE MENU LAYOUT BEGINS...............<*/
+
+.menuItems {
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid yellow; */
+
+}
+
+/*>.........STYLING OF ENTIRE MENU LAYOUT ENDS...............<*/
+
+/* STYLING OF HEADING OF  MENU BEGINS*/
+.category {
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #887025;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    /* border: 2px solid rgb(25, 0, 255); */
 }
 
 
-.bgimage {
+.mealheading  { 
+    
+    text-transform: uppercase;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #0c0901;
+    padding-left: 18%;
+    /* text-align: center; */
+    /* border: black 2px solid; */
 
-    /* border: 2px solid yellowgreen; */
-    height: 466px;
-    position: absolute;
-    width: 100%;
-    background-image: url(Images/timetable1.jpg);
-    /* border: 2px red solid;  */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
-    opacity: 0.6;
+}
+
+.details {
+
+    display:inline-block;
+    width: 90%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #484745;
+    padding-left: 18%;
+    /* text-align: center; */
+    /* float: left; */
+
+    /* border: tomato 2px solid; */
+}
+
+.cash { 
+
+    text-align: right;
+    position:absolute;
+    display: inline-block;
+    float: right;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+    color: #bfa760;
+
+    margin-right: 15%;
+    
+    /* border:  red 2px solid; */
+
+}
+
+.menubutton {
+    text-align: center;
+    margin-top: 2%;
+    /* height: 40px;
+    border: yellow 2px solid; */
+
+}
+.menubutton input {
+    
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+    background: transparent;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: #bfa760;
+    border: 2px solid #bfa760;
+
+    /* border:  red 2px solid; */
     
 }
-/* ABOUT US SECTION STYLING ENDS */
 
-/* TIMETABLE STYLING BEGIN */
+.menubutton input:hover {
 
-/* TIMETABLE STYLING ENDS */
+    color: white;
+    background:#bfa760;
+    border: 1px solid :#bfa760;
+    transition: all 2s ;
+}
 
-/* MENU SECTION BEIGNS */
-/* .menu { 
 
-    border: 2px solid yellowgreen;
-    width: 100%;
-    height: 100vh;
-    position: relative;
+/* STYLING OF HEADING OF  MENU ENDS*/
 
-} */
-/* MENU SECTION ENDS */
+
+/*>........... MENU SECTION ENDS...............< */
