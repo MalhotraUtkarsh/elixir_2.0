@@ -157,8 +157,8 @@ section {
 
 @keyframes name {
 
-    from { opacity:1;bottom: 35px;  transition:all 2s;}
-    to{opacity: 0;bottom: 0px; transition:all 2s;}
+    from { opacity:1;margin-top: 0px ;  transition:all 2s;}
+    to{opacity: 0;margin-top: 10px; transition:all 2s;}
    }
    
    #fas {
@@ -170,16 +170,41 @@ section {
     text-decoration: none;
     /* border: 2px solid yellow; */
     color:#D6D0CE;
-    position:absolute;
+    /* position:absolute; */
     font-weight: bold;
-    bottom: 35px;
     font-size: 30px;
     /* border: 2px yellowgreen solid; */
     /* margin: auto; */
-    width: 100vw;
+
     text-align: center;
     z-index: 10000;
+    margin-top: 10%;
     
+   }
+
+   .animatedarrow {
+       /* border: 2px solid yellow; */
+       width: 100vw;
+       /* background-color: yellow; */
+       z-index: 10000;
+       position:absolute;
+       bottom: 3%;
+       height: 8%;
+
+   }
+
+   .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid grey;
+    position: relative;
+    /* bottom: 19%; */
+    /* margin-bottom: -5%; */
+    text-align: center;
+    left: 45%;
+    margin-top: -1%;
    }
 /* ANIMATED ARROW AT  BOTTOM */
 
@@ -316,7 +341,7 @@ section {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
     z-index: 1400;
 
     
