@@ -45,12 +45,12 @@
             <!-- NAV BAR BEGIN  -->
             <nav class="nav display" id="nav" >
                 <ul class="navbar">
-                    <li class="nav_items" id="navhome" ><a href="#slideshow">home</a></li>
-                    <li class="nav_items" id="navabout"><a href="#about_us">about </a></li>
-                    <li class="nav_items" id="navmenu"><a href="#menu">menu </a></li>
-                    <li class="nav_items" id="navgallery"><a href="#gallery">gallery </a></li>
-                    <li class="nav_items" id="navreservations"><a href="#reservations">reservations </a></li>
-                    <li class="nav_items" id="navlocation"><a href="#contact">location </a></li>
+                    <li class="nav_items" id="navhome" ><a href="#slideshow" id="navitem1" onclick="nav(this.id)" class="navlist">home</a></li>
+                    <li class="nav_items" id="navabout"><a href="#about_us" id="navitem2"onclick="nav(this.id)" class="navlist">about </a></li>
+                    <li class="nav_items" id="navmenu"><a href="#menu" id="navitem3" onclick="nav(this.id)" class="navlist">menu </a></li>
+                    <li class="nav_items" id="navgallery"><a href="#gallery" id="navitem4" onclick="nav(this.id)" class="navlist">gallery </a></li>
+                    <li class="nav_items" id="navreservations"><a href="#reservations" id="navitem5" onclick="nav(this.id)" class="navlist">reservations </a></li>
+                    <li class="nav_items" id="navlocation"><a href="#contact" id="navitem6" onclick="nav(this.id)" class="navlist">location </a></li>
                 </ul>
             </nav>
             <!-- NAV BAR ENDS -->
@@ -88,6 +88,9 @@
                 <div class="line"></div>
                 <div class="header_last_text">
                     <p>The Chef Creates the divine combinations </p>
+                </div>
+                <div class="animatedarrow">
+                    <i class="fa fa-angle-double-down" id="fas"></i>
                 </div>
             </div>
             <!-- SLIDESHOW OF IMAGES END -->
@@ -412,10 +415,10 @@
                 <!-- NAV BAR BEGIN  -->
             <nav class="nav_gallery">
                 <ul class="image_menu">
-                    <li class="gallery_nav_items"><a onclick="image()">All Photos</a></li>
-                    <li class="gallery_nav_items"><a onclick="restaurant()">Restaurants</a></li>
-                    <li class="gallery_nav_items"><a onclick="drinks()">Drinks</a></li>
-                    <li class="gallery_nav_items"><a onclick="deserts()">Deserts</a></li>
+                    <li class="gallery_nav_items"><a onclick="gallerynav(this.id) ; image()" class="navlink active" id="navlink1">All Photos</a></li>
+                    <li class="gallery_nav_items"><a onclick="gallerynav(this.id) ; restaurant() " class="navlink" id="navlink2">Restaurants</a></li>
+                    <li class="gallery_nav_items"><a onclick="gallerynav(this.id) ; drinks() " class="navlink" id="navlink3">Drinks</a></li>
+                    <li class="gallery_nav_items"><a onclick="gallerynav(this.id) ; deserts() " class="navlink" id="navlink4">Deserts</a></li>
                 </ul>
             </nav>
             <!-- NAV BAR ENDS -->
@@ -565,3 +568,5 @@
 </body>
      <script src="Javascript/script.js"></script>
 </html>
+
+<!-- THIS WAS ELIXIR WEBSITE => MADE BY UTKARSH MALHOTRA  -->
