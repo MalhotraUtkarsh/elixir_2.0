@@ -211,7 +211,7 @@ function navChange() {
   function drinks() {
 
    let food = ["img1","img4","img8","img7","img9"] 
-   let drinks = ["img3","img6","img2","img5"] 
+   let drinks = ["img2","img3","img5","img6"] 
    
    for (let x = 0; x < food.length; x++) {
 
@@ -229,7 +229,7 @@ function navChange() {
 
       var element = document.getElementById(drinks[x]) ;
       element.style.display = "block"
-      element.style.transform = "scale(1)"
+      element.style.opacity = "1"
       element.style.transition = "all 2.0s"
       setTimeout(function(){document.getElementById(drinks[x]).style.transform = "scale(1)"});
       
@@ -241,6 +241,44 @@ function navChange() {
   
 
   
+// ACTIVE CLASS NAVBAR GALLERY 
+
+function gallerynav(id) {
+
+   console.log(id)
+   var element = document.getElementsByClassName("navlink")
+   var add = document.getElementById(id)
+   console.log(element)
+   for (let x = 0; x < element.length; x++) {
+      
+      element[x].classList.remove("active") ;
+      
+   }
+
+   add.classList.add("active")
+}
+
+
+function nav(id) {
+
+   console.log(id)
+   var element = document.getElementsByClassName("navlist")
+   var add = document.getElementById(id)
+   console.log(element)
+   for (let x = 0; x < element.length; x++) {
+      
+      element[x].classList.remove("dynamic") ;
+      
+   }
+
+   add.classList.add("dynamic")
+}
+
+
+
+
+
+
 
 
 
