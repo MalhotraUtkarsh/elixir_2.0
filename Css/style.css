@@ -17,12 +17,16 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden; */
     width: 100%;
     height: 100%;
     /* background: black; */
        
 }
+
+ section {
+        overflow-x: auto;
+    }
 
 /* ................. CSS CUSTOMIZIED................ */
 
