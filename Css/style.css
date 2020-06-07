@@ -1174,15 +1174,15 @@ footer {
 	width: 100%;
     background-color:#2C2A2A;
     /* margin: 0; */
-    margin-top: -3%;
-    height: 18%;
+    margin-top: -4%;
+    height: 19%;
 	
 }
 
 .social_menu { 
 
     text-align: center;
-    margin-top: 2%; 
+    margin-top: 4%; 
     font-size: 25px;
     margin-left: 2%;
     display: flex;
@@ -1202,7 +1202,7 @@ footer {
 	background-color: #3D3C38;
 	color: white;
     cursor: pointer;
-    font-size: 130%;
+    font-size: 131%;
 
 
 }
