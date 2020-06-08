@@ -87,10 +87,7 @@ console.log(maxheight)
 
 */
 
-   navChange()
-   
-
-
+navChange()
 
 // NAV COLOR CHANGE FUNCTION 
 
@@ -110,7 +107,7 @@ function navChange() {
 
          if(width > 1000) {
 
-            $(".nav_items a").addClass("grey");
+            $(".navlist").css("color", "grey");
          }
          
       } 
@@ -122,7 +119,7 @@ function navChange() {
 
          if(width > 1000) {
 
-            $(".nav_items a").removeClass("grey");
+            $(".navlist").css("color", "white");
          }
 
         
@@ -274,7 +271,7 @@ function gallerynav(id) {
 
 function nav(id) {
 
-   /* console.log(id)
+   console.log(id)
    var element = document.getElementsByClassName("navlist")
    var add = document.getElementById(id)
    console.log(element)
@@ -289,7 +286,7 @@ function nav(id) {
 
    add.classList.add("dynamic")
 
-   */
+   
 }
 
 
