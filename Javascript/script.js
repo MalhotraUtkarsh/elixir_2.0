@@ -98,6 +98,8 @@ function navChange() {
 
    $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
+      var width =  $(document). width();
+      console.log(width)
       //console.log(scroll)
       
       if (scroll > 300) {
@@ -105,6 +107,11 @@ function navChange() {
          $(".header_container").addClass("navChange");
          
          $(".hamburger").css("color", "black")
+
+         if(width > 1000) {
+
+            $(".nav_items a").addClass("grey");
+         }
          
       } 
       else {
@@ -113,6 +120,12 @@ function navChange() {
 
          $(".hamburger").css("color", "white")
 
+         if(width > 1000) {
+
+            $(".nav_items a").removeClass("grey");
+         }
+
+        
          
       }
 
@@ -261,17 +274,22 @@ function gallerynav(id) {
 
 function nav(id) {
 
-   console.log(id)
+   /* console.log(id)
    var element = document.getElementsByClassName("navlist")
    var add = document.getElementById(id)
    console.log(element)
+   console.log(add)
+
    for (let x = 0; x < element.length; x++) {
       
       element[x].classList.remove("dynamic") ;
+      console.log(element[x])
       
    }
 
    add.classList.add("dynamic")
+
+   */
 }
 
 
