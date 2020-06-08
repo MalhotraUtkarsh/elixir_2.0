@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- HEAD BEGINS  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITLE OF WEBSITE -->
-    <title> Elixir - A resturant Website </title>
+    <title> Elixir - Onlne Restaurants Service </title>
     <!-- LINK OF CSS FILE-->
     <link rel="stylesheet" href="Css/style.css">
 
@@ -17,10 +18,11 @@
     <!-- WEBSITE ICONS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <!-- JQUERY LINK -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+<!-- HEAD ENDS -->
 <body>
     
     <!-- ........ HEADER SECTION BEGINS ........ -->
@@ -45,20 +47,20 @@
             <!-- NAV BAR BEGIN  -->
             <nav class="nav display" id="nav" >
                 <ul class="navbar">
-                    <li class="nav_items" id="navhome" ><a href="#slideshow" id="navitem1" onclick="nav(this.id)" class="navlist">home</a></li>
-                    <li class="nav_items" id="navabout"><a href="#about_us" id="navitem2"onclick="nav(this.id)" class="navlist">about </a></li>
-                    <li class="nav_items" id="navmenu"><a href="#menu" id="navitem3" onclick="nav(this.id)" class="navlist">menu </a></li>
-                    <li class="nav_items" id="navgallery"><a href="#gallery" id="navitem4" onclick="nav(this.id)" class="navlist">gallery </a></li>
-                    <li class="nav_items" id="navreservations"><a href="#reservations" id="navitem5" onclick="nav(this.id)" class="navlist">reservations </a></li>
-                    <li class="nav_items" id="navlocation"><a href="#contact" id="navitem6" onclick="nav(this.id)" class="navlist">location </a></li>
+                    <li class="nav_items" id="navhome" ><a href="#slideshow" id="navitem1" onclick="nav(this.id); off()" class="navlist">home</a></li>
+                    <li class="nav_items" id="navabout"><a href="#about_us" id="navitem2"onclick="nav(this.id); off()" class="navlist">about </a></li>
+                    <li class="nav_items" id="navmenu"><a href="#menu" id="navitem3" onclick="nav(this.id); off()" class="navlist">menu </a></li>
+                    <li class="nav_items" id="navgallery"><a href="#gallery" id="navitem4" onclick="nav(this.id); off()" class="navlist">gallery </a></li>
+                    <li class="nav_items" id="navreservations"><a href="#reservations" id="navitem5" onclick="nav(this.id); off()" class="navlist">reservations </a></li>
+                    <li class="nav_items" id="navlocation"><a href="#contact" id="navitem6" onclick="nav(this.id); off()" class="navlist">location </a></li>
                 </ul>
             </nav>
             <!-- NAV BAR ENDS -->
         </div>
     </header>
-    <!-- .......HEADER SECTION ENDS......... -->
+    <!-- ........ HEADER SECTION ENDS ........ -->
 
-    <!-- .......SLIDESHOW SECTION BEGINS.......... -->
+    <!-- ........ SLIDESHOW SECTION BEGINS ........ -->
     <section class="slideshow" id="slideshow">
         <div class="slideshow_container">
             <!-- SLIDESHOW OF IMAGES START -->
@@ -84,7 +86,8 @@
                 <!-- OVERLAY LOGO OF RESTAURANT -->
                 <div class="overlay"></div>
                 
-                <!-- LINE SEPERATOR AND SUBTEXT -->
+                
+                <!-- LINE SEPERATOR , SUBTEXT AND ANIMATED ARROW -->
                 <div class="line"></div>
                 <div class="header_last_text">
                     <p>The Chef Creates the divine combinations </p>
@@ -94,6 +97,7 @@
                         <a class="fa fa-angle-double-down" id="fas" href="#about_us"></a>
                     </div>
                 </div>
+                <!-- LINE SEPERATOR , SUBTEXT AND ANIMATED ARROW  ENDS -->
             </div>
             <!-- SLIDESHOW OF IMAGES END -->
         </div>
@@ -104,9 +108,11 @@
     <section class="about" id="about_us">
         <div class="about_container">
             <div class="about_title">
+                <!-- TITLE OF SECTION -->
                 <h1>About Us</h1>
             </div>
 
+            <!-- SUBTEXT OF SECTION -->
             <div class="about_subtext">
                 <p>
                     We love restaurants as much as you do. 
@@ -116,12 +122,13 @@
 
             </div>
 
+             <!-- TITLE OF CONTENT OF SECTION -->
             <div class="about_title about_text_title">
 
                 <h1> The History</h1>
 
             </div>
-
+             <!-- CONTENT OF SECTION AND SLIDESHOW -->
             <div class="about_text text_1 text">
 
                 <p>
@@ -144,6 +151,7 @@
                 </p>
 
             </div>
+
 
             <div class="about_slideshow_01">
         
@@ -182,32 +190,37 @@
                 
                  
             </div>
+
+            <!-- CONTENT OF SECTION  AND SLIDESHOW ENDS-->
             
-        
         </div>
     </section>
     <!--............ABOUT US ENDS.............  -->
 
-    <!-- MENU SECTION BEGINS  -->
+    <!-- ........ TIMETABLE SECTION BEGINS ........ -->
     
     <section id = "timetable">
-        <!-- TIMETABLE SECTION  BEGINS  -->
-
+        <!-- BG IMAGE OF SECTION -->
         <div class="bgimage"></div>
 
         <div class="timetable_container" id = "timetable">
+            <!-- HEADING OF SECTION -->
             <div class="timetable_heading">
               <h1>OPENING HOURS</h1>
             </div>
 
+            <!-- SUBTEXT OF SECTION -->
             <div class="timetable_subtext">
               <p>Call Us For A Reservation</p>
             </div>
             
+            <!-- CONTENT OF SECTION --> 
+
             <div class="timetable_info">
               <div class="info">
-
-              <div class="first">
+                  
+                <!-- FIRST pART OF SECTION  -->
+                <div class="first">
                   <div class="day day1">
                     <p> Sunday to Monday </p>
                   </div>
@@ -216,6 +229,8 @@
                     <p> 02 :00 <br> 04 : 00 </p>
                   </div>
               </div>
+
+              <!-- FIRST pART OF SECTION  -->
               <div class="second">
                 <div class="day day1">
                   <p> Tuesday to Friday </p>
@@ -227,36 +242,42 @@
               </div> 
 
             </div>
+            <!-- CONTACT DETAILS   -->
               <div class="call">
                 <p> CALL US AT : 9760020517 </p>
             </div>
             </div>
-            
-      </div>
-      
-     <!-- TIMETABLE SECTION  ENDS  -->
 
+      </div>
     </section>
+
+    <!-- >...............  TIMETABLE SECTION ENDS  ..........<-->
 
     <!-- >...............  MENU SECTION BEGINS  ..........<-->
 
     <section class="menu" id="menu">
         <div class="menu_container">
+            <!-- MENU LOGO -->
             <div class="menulogo">
                 <img src="Css/Images/menu_logo.png" alt="Menu Logo">
             </div>
+            <!-- ENTIRE MENU => MAIN COURSE AND OTHER => .details has description of meal , while .cash has price  -->
             <div class="menuItems">
                 <div class="steaks">
+                    <!-- HEADING OF FIRST SECTION -->
                     <h1 class="category"> MAIN COURSE </h1>
                     <div class="meals">
                         <ul>
                             <li>
+                                <!-- MEAL HEADING -->
                                 <div class="mealheading">
                                     SPECIAL THALI
                                 </div>
+                                <!-- MEAL DETAILS -->
                                 <div class="details">
                                     3 ROTI , PANEER, DAL MAKHNI , RAYTA ETC.
                                 </div>
+                                <!-- MEAL pRICE -->
                                 <div class="cash">
                                     Rs250
                                 </div>
@@ -402,18 +423,26 @@
                         
                     </div>
                 </div>
+            <!-- ENTIRE MENU ENDS -->
             </div>
+             <!-- BUTTON FOR VIEWING FULL MENU -->
             <div class="menubutton">
                 <input type="button" value=" View Complete Menu ">
             </div>
         </div> 
     </section>
 
+    <!-- >...............  MENU SECTION ENDS  ..........<-->
+
+    <!-- >...............  GALLERY SECTION BEGINS  ..........<-->
+
     <section class="gallery" id="gallery">
         <div class="gallery_container">
+            <!-- SECTION HEADING -->
             <div class="gallery_heading">
                 <h1>gallery</h1>
             </div>
+            <!-- SECTION NAVBAR -->
             <div class="gallery_nav">
                 <!-- NAV BAR BEGIN  -->
             <nav class="nav_gallery">
@@ -426,6 +455,7 @@
             </nav>
             <!-- NAV BAR ENDS -->
             </div>
+            <!-- IMAGES OF GALLERY SECTION -->
             <div class="gallery_images">
                 <img src="Css/Images/gallery01.jpg" alt="GALLERY01" class="food" id="img1">
                 <img src="Css/Images/gallery02.jpg" alt="GALLERY02" class="food" id="img2">
@@ -440,23 +470,30 @@
         </div>
     </section>
 
+    <!-- >...............  GALLERY SECTION ENDS  ..........<-->
+
+    <!-- >...............  RESERVATIONS SECTION BEGINS  ..........<-->
+
     <section class="reservations" id="reservations">
         <div class="reservation_container">
+            <!-- RESERVATION SECTION HEADING -->
             <div class="reservation_heading">
                 <h2> Reservation </h2>
             </div>
 
+            <!-- RESERVATION SECTION SUBTEXT -->
             <div class="reservation_subtext">
                 <p> 
                     Booking a table has never been so easy with free &amp; instant online restaurant reservations,
                      booking now!!
                 </p>
             </div>
-
+            <!-- RESERVATION LOGO -->
             <div class="reservation_logo">
                 <img src="Css/Images/reservation_logo.png" alt="LOGO">
             </div>
 
+            <!-- CONTENT AND FORM  OF SECTION -->
             <div class="reservation_info">
                 <h2 class="reservation_info_1"> Welcome To Elixir </h2>
                 <h1 class="reservation_info_2">MAKE A RESERVATION </h1>
@@ -485,23 +522,30 @@
                     <input type="text" name="party" id="party" placeholder="Party">
                 </form>
             </div>
-
+            <!-- FORM ENDS -->
         </div>
+
         <div class="reservation_message">
             <textarea name="Reservation" id="" cols="30" rows="10" class="reservetext"placeholder="Message"></textarea>
         </div>
-
         <div class="menubutton reservation_button">
             <input type="button" value="Reserve Your Table">
         </div>
     </section>
 
+    <!-- >...............  RESERVATIONS SECTION ENDS  ..........<-->
+
+    <!-- >...............  TESTIMONIALS SECTION BEGINS  ..........<-->
+
     <section class="testimonials" id="testimonials">
         <div class="testimonials_container">
+            <!-- TESTIMONIALS BACKGROUND -->
             <div class="testimonial_bgImage"></div>
-             <div class="testimonials_heading">
+            <!-- TESTIMONIALS HEADING -->
+            <div class="testimonials_heading">
                  <h1>testimonials</h1>
              </div>
+            <!-- TESTIMONIALS SLIDESHOW CONTENT -->
              <div class="testimonials_content">
                  <p id="content1" class="content">
                     Applicake chocolate cake wafer toffee pie soufflé wafer.
@@ -528,14 +572,21 @@
                 </p>
 
              </div>
+             <!-- TESTIMONIALS SLIDESHOW CONTENT ENDS -->
         </div>
     </section> 
 
+    <!-- >...............  TESTIMONIALS SECTION ENDS  ..........<-->
+
+    <!-- >...............  CONTACT SECTION BEGINS  ..........<-->
+
     <section class="contact" id="contact">
         <div class="contact_container">
+            <!-- CONTACT HEADING -->
             <div class="contact_heading">
                 <h3>CONTACT</h3>    
             </div>
+            <!-- CONTACT FORM -->
             <div class="contact_form">
                 <div class="upperform">
                     <form>
@@ -549,17 +600,26 @@
                 <div class="lowerform">
                     <textarea name="description" id="contactdescription" cols="30" rows="7" placeholder="Message" class="contactform"></textarea>
                 </div>
-
+                <!-- CONTACT BUTTON -->
                 <div class="menubutton reservation_button">
                     <input type="button" value="Submit">
                 </div>
+
             </div>
         </div>
     </section>
 
+    <!-- >...............  CONTACT SECTION ENDS  ..........<-->
+
+    <!-- >...............  MAp SECTION BEGINS  ..........<-->
+
     <section class="map">
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28288.264392878264!2d78.04972724177244!3d27.592504970989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590426143820!5m2!1sen!2sin" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0" id="location"></iframe>
     </section>
+
+    <!-- >...............  MAp SECTION ENDS  ..........<-->
+
+    <!-- >...............  FOOTER SECTION BEGINS  ..........<-->
 
     <footer class="footer">
 		<div class="social_menu">
@@ -568,9 +628,13 @@
 			<i class="fa fa-instagram" class="social_icon"></i>
 			<i class="fa fa-whatsapp" class="social_icon"></i>
 		</div>
-	</footer>
+    </footer>
+    
+    <!-- >...............  FOOTER SECTION ENDS  ..........<-->
+
 </body>
-     <script src="Javascript/script.js"></script>
+    <!-- LINK OF JAVASCRIpT FILE -->
+    <script src="Javascript/script.js"></script>
 </html>
 
 <!-- THIS WAS ELIXIR WEBSITE => MADE BY UTKARSH MALHOTRA  -->
