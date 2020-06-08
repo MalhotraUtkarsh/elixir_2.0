@@ -583,6 +583,7 @@ section {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
+    /* padding-top: 5%; */
     padding-top: 5%;
     position: relative;
     z-index: 1200;
@@ -800,8 +801,9 @@ section {
     color: white;
     background:#bfa760;
     border: 1px solid #bfa760;
-    margin-top: 2%;
     transition: all 1s ;
+    width: 71%;
+    cursor: pointer;
 }
  
 /* STYLING OF MEAL BUTTONS  BEGIN */
@@ -1738,13 +1740,49 @@ footer {
    
 }
 
+.timetable_heading {
+    font-size: 35px;
+    padding-top: 3%;
+}
+
+.timetable_subtext {
+    font-size: 32px;
+}
+
+.timetable_info {
+    margin-top: 2%;
+}
+
+
+.day{
+    font-size: 45px;
+}
+
+.time {
+    font-size: 40px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.call {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 3%;
+
+}
+
+
+
 /* ABOUT US SLIDESHOW STYLING ENDS */
 
 
 
 
 /*>........... ABOUT US SECTION STYLING ENDS ..............<*/
-
 
 
 .menuItems {
@@ -1756,9 +1794,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.menubutton { 
-    font-size: 20px;
-}
+
 .category  { 
     font-size: 26px;
     margin-bottom: 12%;
@@ -1790,9 +1826,20 @@ margin-left: 2%;
 }
 
 .menubutton input  {
-    font-size: 19px;
-    width: 30%;
+    font-size: 20px;
+    width: 25%;
+    padding:1% 1.4%;
 
+}
+
+
+.menubutton input:hover {
+
+    color: white;
+    background:#bfa760;
+    border: 1px solid grey;
+    transition: all 1s ;
+    width: 27%;
 }
 
   /*GALERY STYLING BEGIN   */
@@ -1802,6 +1849,8 @@ margin-left: 2%;
     justify-content: center;
 
 }
+
+
 
 .gallery_nav_items {
 
@@ -1832,7 +1881,7 @@ margin-left: 2%;
 /* CONTACT FORM STYLING  */
 
 .contact_form {
-    position: relative;;
+    position: relative;
 
 }
 
@@ -1841,6 +1890,8 @@ margin-left: 2%;
     width: 38%;
 
 }
+
+
 
 .upperform input  { 
 
