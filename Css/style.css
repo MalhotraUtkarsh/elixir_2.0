@@ -105,7 +105,7 @@ section {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: white;
+    /* color: white; */
     background: rgba(12,12,13,0.78);
     position: relative;
     text-decoration: none;
@@ -193,7 +193,7 @@ section {
 
    }
 
-   .circle{
+   .circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -871,9 +871,7 @@ section {
 
 /* GALLERY IMAGES STYLING BEGINS */
 .gallery_images { 
-
 margin-top: 4%;
-
 }
 
 .gallery_images img 
@@ -883,6 +881,12 @@ margin-top: 4%;
     height: auto;
     /* padding-bottom: 20px; */
     /* border: 2px yellow solid; */
+}
+
+.gallery_images img:hover {
+
+    opacity: 0.5;
+    transition: all  1s;
 }
 
 
@@ -1019,6 +1023,26 @@ margin-top: 4%;
 
 }
 
+.reservation_message {
+    /* border: 2px solid red; */
+    width: 87%;
+    margin: 4% auto;
+    position: relative;
+    left: -2%;
+    
+
+}
+
+.reservetext {
+    /* border: 2px solid red; */
+    width: 100%;
+    resize: none;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 7px;
+    border: 1px solid #cbc8c8;
+}
 .reservation_button {
 
     margin-top: 8%;
@@ -1307,9 +1331,604 @@ footer {
 
     color:#bfa760;
     transition: all 1s;
+   
 
 
    }
 
 
-     
+@media only screen and (min-width:1000px) {
+
+    /* >.............HEADER STYLING BEGINS ............<*/
+
+/* LAYOUT OF HEADER */
+
+.header_container {
+    
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    background: rgba(12,12,13,0.78);
+    /* border: 2px solid black; */
+
+}
+
+/* EFFECTS OF COLOR CHANGE IN NAVBAR */
+
+
+
+
+/* STYLING OF NAVBAR BEGINS */
+
+.nav {
+
+    position:fixed;
+    top: 0%;
+    right: 20%;
+
+}
+
+.navbar { 
+    position:fixed;
+    top: 3%;
+    right: 20%;
+    display: flex;
+   
+}
+
+.navChange {
+
+    background-color: white;
+    transition:  all 1s;
+    
+}
+.dynamic { 
+
+    color:#bfa760; 
+   
+   }
+
+/* STYLING OF BRAND => ELIXIR */
+
+.nav_heading h1 {
+    font-size: 50px;
+    display: inline-block;
+}
+/* STYLING OF NAV ITEMS => HOME  , ABOUT ETC ....*/
+.nav_items {
+
+    font-size: 14px;
+    border: none;
+    padding: 4px ;
+    background: none;
+    position: relative;
+    z-index: 1000;
+    margin: 3% 3%;
+    font-weight: bold;
+    
+
+}
+
+
+/* SETTING HOVERING AND OTHER EFFECT ON NAVBAR */
+
+.navlist:hover {
+   color:  #C0A757;
+}
+
+
+.display {
+   display: block;
+
+}
+
+/* STYLING OF HAMUBURGER ICON */
+
+.hamburger {
+
+    display:none;
+
+    /* border: orangered 2px solid; */
+    /* float: right;  */
+
+}
+
+/* >.............. SLIDESHOW STYLING BEGINS ................< */
+
+/* LAYOUT OF SLIDESHOW SECTION */
+
+/* #slideshow {
+    
+    position: relative;
+     top: 0px; 
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background: black;
+
+    border: 2px black solid;
+} */
+
+/* .slideshow_container { 
+
+    width: 100%;
+    height: 100vh;
+
+} */
+
+/* LAYOUT STYLING ENDS */
+
+/* SLIDESHOW STYLING BEGINS */
+
+/* .home_slideshow   {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    border: olive 2px solid;
+      
+}
+
+.slides   { 
+
+    height: 100%;
+    width: 100%;
+
+} */
+
+/* .home_slideshow img   {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 12;
+
+} */
+
+
+
+.caption  {
+    
+    /* width: 100%; */
+    /* position: absolute;
+    top:60%;
+    text-align: center;
+    color: white; */
+    font-size: 80px;
+    /* font-family: 'Oswald', sans-serif; */
+    letter-spacing: 5px;
+    /* font-weight: 300;
+    z-index: 1200;  */
+
+    /* border:2px yellow solid ;  */
+
+}
+
+/* SLIDESHOW STYLING ENDS */
+
+/* OVERLAY LOGO STYLNG BEGINS */
+
+.overlay {
+
+    
+    width: 40%;
+    height: 30%;
+    background: url('Images/design.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin: auto; */
+    background-position: center;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 1200;
+
+    /* border: 2px solid red; */
+
+}
+
+/* OVERLAY LOGO STYLNG ENDS */
+
+/* STYLING OF  LINE BEGINS */
+
+.line {
+
+    width: 100%;
+    height: 40%;
+    background: url('Images/line.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    position: absolute;
+    bottom: 5%;
+    z-index: 1300;
+
+    /* max-width: 100%;
+    border:2px solid yellow; */
+
+}
+
+
+/* STYLING OF  LINE ENDS */
+
+.header_last_text {
+
+    font-weight: 100;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 13%;
+    font-size: 20px;
+    z-index: 1400;
+
+    
+}
+
+.animatedarrow {
+
+    display: none;
+}
+
+/* >..........SLIDESHOW STYLING ENDS ..............<*/
+
+
+/* >.................ABOUT US SECTION STYLING BEGINS <...........*/
+
+/* STYLING LAYOUT OF SECTION BEGIN  */
+
+/* .about  {
+    
+    width: 100%;
+    position: relative;
+    border:2px solid yellow;
+} */
+/* 
+.about_container { 
+
+    position: relative;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+
+} */
+
+/* STYLING LAYOUT OF SECTION ENDS  */
+
+
+/* SECTION HEADING  AND SUBHEADING STYLING BEGIN  */
+
+
+.about_title {
+   
+    margin:12% auto 2% auto;
+    font-size: 30px;
+    /* border:2px solid yellow; */
+
+}
+
+
+
+.about_subtext {
+    
+    width: 56%;   
+    font-size: 19px;
+    /* border: 1px solid red; */
+
+}
+
+/* SECTION HEADING AND SUBHEADING STYLING ENDS  */
+
+
+/* ABOUT US TEXT CONTENT STYLING BEGIN => PARAGRAHS  */
+
+.about_text_title  {
+    
+    
+    margin: 6% 10%  0% 10%  ;
+    /* border: 1px solid red; */
+    text-align: left;
+    
+
+}
+
+.about_text_title h1 {
+
+    font-size: 75px;
+    font-weight: 500;
+
+}
+
+.text {
+    
+  
+    font-size: 17px;
+    font-weight: 500;
+    width: 50%;
+    max-width: 600px;
+    margin: 0 5%;
+    text-align: left;
+    /* border: 2px black dashed; */
+}
+
+.text strong {
+
+    color: #c0a756;
+
+}
+
+.text_2 {
+    position: relative;
+    left: 45%;
+
+}
+
+
+.about_text {
+    position: relative;
+    margin-top: 5%;
+}
+
+/* ABOUT US TEXT STYLING ENDS */
+
+
+
+/* ABOUT US SLIDESHOW STYLING BEGINS */
+
+.about_slideshow_01 {
+    
+    position: absolute;
+    top: 18%;
+    right: 0%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 60%;
+    max-height: 45%;
+
+    /* border: 2px solid red; */
+
+}
+
+.about_slideshow_01 img{
+    width: 81%;
+    margin: 0px;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    max-height: 100%;
+
+    /* max-width: 500px;
+    max-height: 500px; */
+    /* display: block; */
+    /* border: 2px yellowgreen solid; */
+     /* height: 100%; */
+
+}
+
+.about_slideshow_02 {
+    /* FONT-WEIGHT: 500; */
+    position: absolute;
+    top: 61%;
+    height: 40%;
+    width: 80%;
+    left: 3%;
+    max-width: 43%;
+    max-height: 30%;
+    margin-top: 3%;
+}
+
+.about_slideshow_02 img {
+
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    max-height: 100%;
+    display: block;
+   
+}
+
+/* ABOUT US SLIDESHOW STYLING ENDS */
+
+
+
+
+/*>........... ABOUT US SECTION STYLING ENDS ..............<*/
+
+
+
+.menuItems {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    /* border: 2px solid yellow; */
+    justify-content: space-evenly;
+}
+
+.menubutton { 
+    font-size: 20px;
+}
+.category  { 
+    font-size: 26px;
+    margin-bottom: 12%;
+}
+
+.meals ul { 
+    list-style: none;
+}
+
+.mealheading { 
+
+    font-size: 17px;
+    margin-top: 4%;
+}
+
+.details {
+    
+    font-size: 13px;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+.cash {
+
+    font-size: 15px;
+color: #bfa760;
+/* width: 60px; */
+margin-left: 2%;
+}
+
+.menubutton input  {
+    font-size: 19px;
+    width: 30%;
+
+}
+
+  /*GALERY STYLING BEGIN   */
+.image_menu {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery_nav_items {
+
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    list-style: none;
+
+}
+
+.gallery_images {
+
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+/* GALLERY STYLING ENDS  */
+
+/* TESTIOMONIALS STYLING BEGINS */
+.testimonials_content {
+    font-size: 24px;
+}
+
+.testimonials_heading  {
+    font-size: 1.5em;
+}
+
+/* CONTACT FORM STYLING  */
+
+.contact_form {
+    position: relative;;
+
+}
+
+.contactform {
+    display: block;
+    width: 38%;
+
+}
+
+.upperform input  { 
+
+    left: -25%;
+    position: relative;
+}
+
+.lowerform  { 
+
+position: absolute;
+top: -10%;
+right: -31%;
+width: 118%;
+height: 186%;
+
+}
+
+/* FOOTER BEGINS*/
+#map {
+    width: 100%;
+    height: 400px;
+}
+  
+
+footer {
+	width: 100%;
+    background-color:#2C2A2A;
+    /* margin: 0; */
+    margin-top: -4%;
+    height: 17%;
+	
+}
+
+.social_menu { 
+    margin-left: 2.4%;    
+    
+}
+
+.social_menu i {
+	width:80px;
+	height: 80px;
+	padding-top: 1.45%;
+    font-size: 51px;
+
+}
+
+
+/* FOOTER ENDS */
+
+/* EFFECTS  OF NAV BAR  */
+.grey {
+    color: grey;
+}
+/* EFFECTS  OF NAV BAR  */
+
+
+/* RESERVATION START */
+.reservation_subtext {
+    width: 50%;
+}
+
+.reservation_logo img {
+    width: 17%;
+}
+
+
+.reservation_info {
+    /* border: red 2px solid; */
+    margin-top: 7%;
+}
+
+.reservation_form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation_info_1 {
+    font-size: 30px;
+}
+
+
+.reservation_message {
+    /* border: 2px solid red; */
+    width: 78%;
+    left: 0%;
+}
+/* RESERVATION ENDS */
+
+
+}
