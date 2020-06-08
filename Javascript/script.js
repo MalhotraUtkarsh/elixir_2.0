@@ -1,13 +1,14 @@
 //tester()
 
-
+// NAVBAR TOGGLE FUNCTION BEIGNS
 function toggle() {
+   $(".navbar").removeClass("hide")
     var element = document.getElementById('nav') ;
     element.classList.toggle('display') ;
     element.style.transition = "all 1s " ;
     
 }
-
+// SLIDESHOW FUNCTIONS BEGINS
 var myIndex = 1 ;
 carousel()
 
@@ -88,7 +89,6 @@ console.log(maxheight)
 */
 
 navChange()
-
 // NAV COLOR CHANGE FUNCTION 
 
 function navChange() {
@@ -107,7 +107,8 @@ function navChange() {
 
          if(width > 1000) {
 
-            $(".navlist").css("color", "grey");
+            $(".navlist").addClass("grey");
+           
          }
          
       } 
@@ -119,7 +120,8 @@ function navChange() {
 
          if(width > 1000) {
 
-            $(".navlist").css("color", "white");
+            $(".navlist").removeClass("grey");
+           
          }
 
         
@@ -249,7 +251,7 @@ function navChange() {
   }
 
   
-
+//GALLERY FUNCTION ENDS
   
 // ACTIVE CLASS NAVBAR GALLERY 
 
@@ -268,10 +270,10 @@ function gallerynav(id) {
    add.classList.add("active")
 }
 
-
+// TESTING MODE => THIS FUNCTION ADD THE CLASS WHICH CHANGE COLOR OF MENU ITEMS
 function nav(id) {
 
-   console.log(id)
+  /* console.log(id)
    var element = document.getElementsByClassName("navlist")
    var add = document.getElementById(id)
    console.log(element)
@@ -286,18 +288,22 @@ function nav(id) {
 
    add.classList.add("dynamic")
 
-   
+   */
+  
 }
 
 
+// VANISH THE THE NAVbar ON CLICKING ONE OF THE MENU OTIONS
+function off() {
+   var width =  $(document). width();
+   if (width < 1000) {
 
+      $(".navbar").addClass("hide")
 
+   }
 
-
-
-
-
-
+   
+}
 
 
 
