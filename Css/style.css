@@ -61,6 +61,11 @@ section {
     
 }
 
+.hide {
+    display: none;
+ 
+ }
+
 .dark {
 
     color: black;
@@ -140,7 +145,7 @@ section {
 .hamburger {
 
     position: fixed;
-    top: 3%;
+    top: 2%;
     width: 100%;
     text-align: right;
     padding-right: 5%;
@@ -905,6 +910,7 @@ margin-top: 4%;
     margin-top: 8%;
 }
 
+/* RESERVATION TITLE */
 .reservation_heading h2 {
 
     text-align: center;
@@ -917,7 +923,7 @@ margin-top: 4%;
     /* margin-top: 15%; */
 
 }
-
+/* RESERVATION SUBTEXT */
 .reservation_subtext {
 
     font-family: "Cabin";
@@ -931,7 +937,7 @@ margin-top: 4%;
     text-align: center;
 
 }
-
+/* RESERVATION LOGO */
 .reservation_logo  {
 
     /* border: 2px solid red; */
@@ -945,7 +951,7 @@ margin-top: 4%;
     
     width: 25%;
 }
-
+/* RESERVATION WHOLE CONTENT */
 .reservation_info {
 
     /* border: red 2px solid; */
@@ -998,7 +1004,7 @@ margin-top: 4%;
     font-weight: 400;
 
 }
-
+/* RESERVATION FORM  */
 .reservation_form {margin-top: 5%;}
 
 .table input {
@@ -1045,6 +1051,7 @@ margin-top: 4%;
     padding: 7px;
     border: 1px solid #cbc8c8;
 }
+/* RESERVATION BUTTON */
 .reservation_button {
 
     margin-top: 8%;
@@ -1060,7 +1067,7 @@ margin-top: 4%;
     /* height: 100%; */
 
 }
-
+/* LAYOUT OF TESTIMONIALS */
 .testimonials_container {
 
     background-color: black;
@@ -1069,7 +1076,7 @@ margin-top: 4%;
 }
 
 
-
+/* BG IMAGE */
 .testimonial_bgImage  {
 
     height: 400px;
@@ -1083,7 +1090,7 @@ margin-top: 4%;
     opacity: 0.5;
 
 }
-
+/* HEADING */
 .testimonials_heading {
     position:relative;
     z-index: 1000;
@@ -1109,10 +1116,8 @@ margin-top: 4%;
     background: #e2e9ed;
 
 }
- /* 
- 
- */
 
+/* CONTENT OF SLIDESHOW */
  .testimonials_content {
 
     position:relative;
@@ -1128,9 +1133,6 @@ margin-top: 4%;
     display: inline-block;
     width: 80%;
     vertical-align: middle;
-
-   
-
 
  }
 
@@ -1152,6 +1154,7 @@ margin-top: 4%;
 /* TESTIMONIALS STYLING ENDS */
 
 /* CONTACT STYLING BEGIN */
+/* LAYOUT */
 #contact {
 
     width: 100%;
@@ -1163,7 +1166,7 @@ margin-top: 4%;
     /* border: tomato 2px solid; */
 }
 
-
+/* CONTACT FORM */
 .contactform {
 
     display:inline-block;
@@ -1356,6 +1359,8 @@ footer {
 
 }
 
+
+
 /* EFFECTS OF COLOR CHANGE IN NAVBAR */
 
 
@@ -1373,7 +1378,7 @@ footer {
 
 .navbar { 
     position:fixed;
-    top: 3%;
+    top: 2%;
     right: 20%;
     display: flex;
    
@@ -1396,6 +1401,7 @@ footer {
 .nav_heading h1 {
     font-size: 50px;
     display: inline-block;
+    padding-top: 1%;
 }
 /* STYLING OF NAV ITEMS => HOME  , ABOUT ETC ....*/
 .nav_items {
@@ -1424,6 +1430,11 @@ footer {
    display: block;
 
 }
+
+.hide {
+    display: none;
+ 
+ }
 
 /* STYLING OF HAMUBURGER ICON */
 
@@ -1740,24 +1751,28 @@ footer {
    
 }
 
+/* ABOUT US STYLING ENDS */
+
+/* TIMETABLE SECTION BEGINS */
+/* HEADING */
 .timetable_heading {
     font-size: 35px;
     padding-top: 3%;
 }
-
+/* SUBTEXT */
 .timetable_subtext {
     font-size: 32px;
 }
-
+/* INFORMATION OF TIMETABLE */
 .timetable_info {
     margin-top: 2%;
 }
 
-
+/* DAYS */
 .day{
     font-size: 45px;
 }
-
+/* TIMINGS */
 .time {
     font-size: 40px;
 
@@ -1767,7 +1782,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
-
+/* CALL TO ACTION */
 .call {
     font-size: 19px;
     text-align: center;
@@ -1777,14 +1792,14 @@ footer {
 
 
 
-/* ABOUT US SLIDESHOW STYLING ENDS */
 
 
 
+/*>........... TIMETABLE SECTION STYLING ENDS ..............<*/
 
-/*>........... ABOUT US SECTION STYLING ENDS ..............<*/
+/*>........... MENU SECTION STYLING BEGINS ..............<*/
 
-
+/* ENITRE MENU  */
 .menuItems {
 
     display: flex;
@@ -1794,29 +1809,29 @@ footer {
     justify-content: space-evenly;
 }
 
-
+/* HEADINGS OF MENU  */
 .category  { 
     font-size: 26px;
     margin-bottom: 12%;
 }
-
+/* SETTING LIST STYLE NONE  */
 .meals ul { 
     list-style: none;
 }
-
+/*  HEADING OF MEAL */
 .mealheading { 
 
     font-size: 17px;
     margin-top: 4%;
 }
-
+/* DETAILS OF MEAL */
 .details {
     
     font-size: 13px;
     margin-bottom: 10%;
     margin-top: 3%;
 }
-
+/* CASH OF MEAL */
 .cash {
 
     font-size: 15px;
@@ -1824,7 +1839,7 @@ color: #bfa760;
 /* width: 60px; */
 margin-left: 2%;
 }
-
+/* MENU BUTTON */
 .menubutton input  {
     font-size: 20px;
     width: 25%;
@@ -1840,17 +1855,22 @@ margin-left: 2%;
     border: 1px solid grey;
     transition: all 1s ;
     width: 27%;
+    cursor: pointer;
 }
 
-  /*GALERY STYLING BEGIN   */
+
+
+/*>.............. MENU STYLING ENDS............< */
+
+/*>..............GALERY STYLING BEGIN..............<   */
+
+/* GALLERY NAV BAR  */
 .image_menu {
 
     display: flex;
     justify-content: center;
 
 }
-
-
 
 .gallery_nav_items {
 
@@ -1860,26 +1880,69 @@ margin-left: 2%;
     list-style: none;
 
 }
-
+/* GALLERY IMAGES  */
 .gallery_images {
 
     display: grid;
     grid-template-columns: repeat(3,auto);
 }
 
-/* GALLERY STYLING ENDS  */
+/* >..............GALLERY STYLING ENDS ..............< */
 
-/* TESTIOMONIALS STYLING BEGINS */
-.testimonials_content {
-    font-size: 24px;
+/*>............. RESERVATION START .................<*/
+/* SUBTEXT */
+.reservation_subtext {
+    width: 50%;
+}
+/* LOGO */
+.reservation_logo img {
+    width: 17%;
 }
 
+/* CONTENT */
+.reservation_info {
+    /* border: red 2px solid; */
+    margin-top: 7%;
+}
+
+/* FORM */
+.reservation_form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation_info_1 {
+    font-size: 30px;
+}
+
+/* MESSAGE BOX */
+.reservation_message {
+    /* border: 2px solid red; */
+    width: 78%;
+    left: 0%;
+}
+/* >.................RESERVATION ENDS................< */
+
+/* >.................TESTIOMONIALS STYLING BEGINS.............< */
+
+/* HEADING */
 .testimonials_heading  {
     font-size: 1.5em;
 }
 
-/* CONTACT FORM STYLING  */
+/* TESTIMONALS CONTENT STYLING  */
+.testimonials_content {
+    font-size: 24px;
+}
 
+
+/* >.................TESTIOMONIALS STYLING ENDS.............< */
+
+
+/*>............. CONTACT FORM STYLING .........< */
+
+/* CONTACT FORM */
 .contact_form {
     position: relative;
 
@@ -1890,8 +1953,6 @@ margin-left: 2%;
     width: 38%;
 
 }
-
-
 
 .upperform input  { 
 
@@ -1909,7 +1970,9 @@ height: 186%;
 
 }
 
-/* FOOTER BEGINS*/
+/* >...............FOOTER BEGINS............<*/
+
+/* LOCATION BASIC STYLING */
 #map {
     width: 100%;
     height: 400px;
@@ -1933,53 +1996,18 @@ footer {
 .social_menu i {
 	width:80px;
 	height: 80px;
-	padding-top: 1.45%;
+	padding-top: 15px;
     font-size: 51px;
 
 }
 
 
-/* FOOTER ENDS */
+/* >............FOOTER ENDS............< */
 
 /* EFFECTS  OF NAV BAR  */
 .grey {
-    color: grey;
+    color:grey;
 }
 /* EFFECTS  OF NAV BAR  */
-
-
-/* RESERVATION START */
-.reservation_subtext {
-    width: 50%;
-}
-
-.reservation_logo img {
-    width: 17%;
-}
-
-
-.reservation_info {
-    /* border: red 2px solid; */
-    margin-top: 7%;
-}
-
-.reservation_form {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.reservation_info_1 {
-    font-size: 30px;
-}
-
-
-.reservation_message {
-    /* border: 2px solid red; */
-    width: 78%;
-    left: 0%;
-}
-/* RESERVATION ENDS */
-
 
 }
