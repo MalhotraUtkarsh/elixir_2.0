@@ -2,7 +2,7 @@
 
 // NAVBAR TOGGLE FUNCTION BEIGNS
 function toggle() {
-   $(".navbar").removeClass("hide")
+   // $(".navbar").removeClass("hide")
     var element = document.getElementById('nav') ;
     element.classList.toggle('display') ;
     element.style.transition = "all 1s " ;
@@ -298,7 +298,7 @@ function off() {
    var width =  $(document). width();
    if (width < 1000) {
 
-      $(".navbar").addClass("hide")
+     // $(".navbar").addClass("hide")
 
    }
 
