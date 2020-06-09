@@ -564,7 +564,7 @@ section {
     height: 466px;
     position: absolute;
     width: 100%;
-    background-image: url(Images/timetable1.jpg);
+    background-image: url(Images/timetable1-min.jpg);
     /* border: 2px red solid;  */
     background-repeat: no-repeat;
     background-size: cover;
@@ -1082,7 +1082,7 @@ margin-top: 4%;
     height: 400px;
     width: 100%;
     /* border: 2px solid yellow; */
-    background-image: url('Images\\testimonials.jpg');
+    background-image: url('Images\\testimonials-min.jpg');
     background-position: center;
     position: absolute;
     background-repeat: no-repeat;
