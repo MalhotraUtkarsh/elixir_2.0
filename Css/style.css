@@ -267,6 +267,8 @@ section {
     position: absolute;
     top: 0%;
     z-index: 12;
+     background-size: cover;
+    object-fit: cover;
 
 }
 
